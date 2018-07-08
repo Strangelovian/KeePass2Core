@@ -131,20 +131,9 @@
           <e p="KdbxFile.Write.cs" t="Include" />
           <e p="OldFormatException.cs" t="Include" />
         </e>
-        <e p="Translation" t="Include">
-          <e p="KPControlCustomization.cs" t="Include" />
-          <e p="KPFormCustomization.cs" t="Include" />
-          <e p="KPStringTable.cs" t="Include" />
-          <e p="KPStringTableItem.cs" t="Include" />
-          <e p="KPTranslation.cs" t="Include" />
-          <e p="KPTranslationProperties.cs" t="Include" />
-        </e>
         <e p="Utility" t="Include">
           <e p="AppLogEx.cs" t="Include" />
-          <e p="GfxUtil.cs" t="Include" />
           <e p="MemUtil.cs" t="Include" />
-          <e p="MessageService.cs" t="Include" />
-          <e p="MonoWorkarounds.cs" t="Include" />
           <e p="StrUtil.cs" t="Include" />
           <e p="TimeUtil.cs" t="Include" />
           <e p="TypeOverridePool.cs" t="Include" />

@@ -2,4 +2,16 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Utility\MessageService.cs" />
+    <Compile Remove="Utility\GfxUtil.cs" />
+    <Compile Remove="Utility\MonoWorkarounds.cs" />
+    <Compile Remove="Translation\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Translation\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Translation\**" />
+  </ItemGroup>
 </Project>

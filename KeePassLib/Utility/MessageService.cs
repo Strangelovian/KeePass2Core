@@ -74,15 +74,6 @@ namespace KeePassLib.Utility
 #endif
 		private const MessageBoxIcon m_mbiQuestion = MessageBoxIcon.Question;
 
-		public static string NewLine
-		{
-#if !KeePassLibSD
-			get { return Environment.NewLine; }
-#else
-			get { return "\r\n"; }
-#endif
-		}
-
 		public static string NewParagraph
 		{
 #if !KeePassLibSD

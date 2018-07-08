@@ -50,7 +50,7 @@ namespace KeePassLib.Serialization
 			}
 
 			sb.Append(KLRes.FileLockedWrite);
-			sb.Append(MessageService.NewLine);
+			sb.Append(StrUtil.NewLine);
 
 			if(!string.IsNullOrEmpty(strUser)) sb.Append(strUser);
 			else sb.Append("?");

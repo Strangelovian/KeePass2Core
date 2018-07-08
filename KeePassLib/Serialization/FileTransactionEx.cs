@@ -195,7 +195,7 @@ namespace KeePassLib.Serialization
 			{
 				if(!IOConnection.FileExists(m_iocTemp))
 					throw new FileNotFoundException(m_iocTemp.Path +
-						MessageService.NewLine + KLRes.FileSaveFailed);
+						StrUtil.NewLine + KLRes.FileSaveFailed);
 			}
 
 			bool bMadeUnhidden = UrlUtil.UnhideFile(m_iocBase.Path);

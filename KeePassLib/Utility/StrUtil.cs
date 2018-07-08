@@ -260,6 +260,16 @@ namespace KeePassLib.Utility
 				return l;
 			}
 		}
+		
+		public static string NewLine
+		{
+#if !KeePassLibSD
+			get { return Environment.NewLine; }
+#else
+			get { return "\r\n"; }
+#endif
+		}
+
 
 		// public static string RtfPar
 		// {
