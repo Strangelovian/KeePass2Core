@@ -2,5 +2,6 @@
 *.user
 Build
 Translation
+workspace.xml
 bin
 obj
