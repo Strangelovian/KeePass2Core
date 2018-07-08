@@ -1418,6 +1418,8 @@
   </Target>
   -->
   <PropertyGroup>
+    <!--
     <PostBuildEvent>"$(FrameworkSDKDir)bin\sgen.exe" /assembly:"$(TargetPath)" /force /nologo /compiler:/keycontainer:VS_KEY_27A70973F3FC3787 /compiler:/delaysign-</PostBuildEvent>
+    -->
   </PropertyGroup>
 </Project>

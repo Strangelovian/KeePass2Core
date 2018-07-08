@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\david\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_KeePass.-777583309.00" t="ExcludeRecursive" />
+    <e p="C:\Users\david\Source\KeePass2Core.git" t="IncludeFlat">
+      <e p="Build\KeePass\Release" t="ExcludeRecursive" />
+      <e p="Build\KeePassLib\Release" t="ExcludeRecursive" />
+      <e p="KeePass" t="IncludeRecursive">
+        <e p="App" t="Include">
+          <e p="AppDefs.cs" t="Include" />
+          <e p="AppHelp.cs" t="Include" />
+          <e p="AppIcons.cs" t="Include" />
+          <e p="AppPolicy.cs" t="Include" />
+          <e p="Configuration" t="Include">
+            <e p="AceApplication.cs" t="Include" />
+            <e p="AceCustomConfig.cs" t="Include" />
+            <e p="AceDefaults.cs" t="Include" />
+            <e p="AceIntegration.cs" t="Include" />
+            <e p="AceLogging.cs" t="Include" />
+            <e p="AceMainWindow.cs" t="Include" />
+            <e p="AceNative.cs" t="Include" />
+            <e p="AcePasswordGenerator.cs" t="Include" />
+            <e p="AceSecurity.cs" t="Include" />
+            <e p="AceToolBar.cs" t="Include" />
+            <e p="AceTrayIcon.cs" t="Include" />
+            <e p="AceUI.cs" t="Include" />
+            <e p="AppConfigEx.cs" t="Include" />
+            <e p="AppConfigSerializer.cs" t="Include" />
+          </e>
+        </e>
+        <e p="DataExchange" t="Include">
+          <e p="CsvStreamReader.cs" t="Include" />
+          <e p="CsvStreamReaderEx.cs" t="Include" />
+          <e p="ExportUtil.cs" t="Include" />
+          <e p="FileFormatPool.cs" t="Include" />
+          <e p="FileFormatProvider.cs" t="Include" />
+          <e p="Formats" t="Include">
+            <e p="AmpXml250.cs" t="Include" />
+            <e p="AnyPwCsv144.cs" t="Include" />
+            <e p="ChromeCsv66.cs" t="Include" />
+            <e p="CodeWalletTxt605.cs" t="Include" />
+            <e p="DashlaneCsv2.cs" t="Include" />
+            <e p="DataVaultCsv47.cs" t="Include" />
+            <e p="DesktopKnoxXml32.cs" t="Include" />
+            <e p="EnpassTxt5.cs" t="Include" />
+            <e p="FlexWalletXml17.cs" t="Include" />
+            <e p="GenericCsv.cs" t="Include" />
+            <e p="HandySafeProXml12.cs" t="Include" />
+            <e p="HandySafeTxt512.cs" t="Include" />
+            <e p="KasperskyPwMgrXml50.cs" t="Include" />
+            <e p="KeePassCsv1x.cs" t="Include" />
+            <e p="KeePassHtml2x.cs" t="Include" />
+            <e p="KeePassKdb1x.cs" t="Include" />
+            <e p="KeePassKdb2x.cs" t="Include" />
+            <e p="KeePassKdb2xRepair.cs" t="Include" />
+            <e p="KeePassXml1x.cs" t="Include" />
+            <e p="KeePassXml2x.cs" t="Include" />
+            <e p="KeePassXXml041.cs" t="Include" />
+            <e p="LastPassCsv2.cs" t="Include" />
+            <e p="MozillaBookmarksHtml100.cs" t="Include" />
+            <e p="MozillaBookmarksJson100.cs" t="Include" />
+            <e p="MSecureCsv355.cs" t="Include" />
+            <e p="NetworkPwMgrCsv4.cs" t="Include" />
+            <e p="NortonIdSafeCsv2013.cs" t="Include" />
+            <e p="NPasswordNpw102.cs" t="Include" />
+            <e p="OnePwProCsv599.cs" t="Include" />
+            <e p="PassKeeper12.cs" t="Include" />
+            <e p="PinsTxt450.cs" t="Include" />
+            <e p="PpKeeperHtml270.cs" t="Include" />
+            <e p="PVaultTxt14.cs" t="Include" />
+            <e p="PwAgentXml234.cs" t="Include" />
+            <e p="PwDepotXml26.cs" t="Include" />
+            <e p="PwExporterXml105.cs" t="Include" />
+            <e p="PwKeeperCsv70.cs" t="Include" />
+            <e p="PwMemory2008Xml104.cs" t="Include" />
+            <e p="PwPrompterDat12.cs" t="Include" />
+            <e p="PwSafeXml302.cs" t="Include" />
+            <e p="PwSaverXml412.cs" t="Include" />
+            <e p="PwsPlusCsv1007.cs" t="Include" />
+            <e p="PwTresorXml100.cs" t="Include" />
+            <e p="RevelationXml04.cs" t="Include" />
+            <e p="RoboFormHtml69.cs" t="Include" />
+            <e p="SafeWalletXml3.cs" t="Include" />
+            <e p="SecurityTxt12.cs" t="Include" />
+            <e p="Spamex20070328.cs" t="Include" />
+            <e p="SplashIdCsv402.cs" t="Include" />
+            <e p="SteganosPwManager2007.cs" t="Include" />
+            <e p="StickyPwXml50.cs" t="Include" />
+            <e p="TurboPwsCsv5.cs" t="Include" />
+            <e p="VisKeeperTxt3.cs" t="Include" />
+            <e p="Whisper32Csv116.cs" t="Include" />
+            <e p="WinFavorites10.cs" t="Include" />
+            <e p="XslTransform2x.cs" t="Include" />
+            <e p="ZdnPwProTxt314.cs" t="Include" />
+          </e>
+          <e p="GxiImporter.cs" t="Include" />
+          <e p="GxiProfile.cs" t="Include" />
+          <e p="ImportUtil.cs" t="Include" />
+          <e p="Json.cs" t="Include" />
+          <e p="KdbFile.cs" t="Include" />
+          <e p="KdbManager.cs" t="Include" />
+          <e p="PwExportInfo.cs" t="Include" />
+        </e>
+        <e p="Ecas" t="Include">
+          <e p="EcasAction.cs" t="Include" />
+          <e p="EcasActionProvider.cs" t="Include" />
+          <e p="EcasActionType.cs" t="Include" />
+          <e p="EcasCondition.cs" t="Include" />
+          <e p="EcasConditionProvider.cs" t="Include" />
+          <e p="EcasConditionType.cs" t="Include" />
+          <e p="EcasContext.cs" t="Include" />
+          <e p="EcasDefaultActionProvider.cs" t="Include" />
+          <e p="EcasDefaultConditionProvider.cs" t="Include" />
+          <e p="EcasDefaultEventProvider.cs" t="Include" />
+          <e p="EcasEnum.cs" t="Include" />
+          <e p="EcasEvent.cs" t="Include" />
+          <e p="EcasEventProvider.cs" t="Include" />
+          <e p="EcasEventType.cs" t="Include" />
+          <e p="EcasParameter.cs" t="Include" />
+          <e p="EcasPool.cs" t="Include" />
+          <e p="EcasPropertyDictionary.cs" t="Include" />
+          <e p="EcasSystemEvents.cs" t="Include" />
+          <e p="EcasTrigger.cs" t="Include" />
+          <e p="EcasTriggerSystem.cs" t="Include" />
+          <e p="EcasUtil.cs" t="Include" />
+          <e p="EcasValueType.cs" t="Include" />
+          <e p="IEcasObject.cs" t="Include" />
+          <e p="IEcasParameterized.cs" t="Include" />
+        </e>
+        <e p="Forms" t="Include">
+          <e p="AboutForm.cs" t="Include" />
+          <e p="AboutForm.Designer.cs" t="Include" />
+          <e p="AboutForm.resx" t="Include" />
+          <e p="AutoTypeCtxForm.cs" t="Include" />
+          <e p="AutoTypeCtxForm.Designer.cs" t="Include" />
+          <e p="AutoTypeCtxForm.resx" t="Include" />
+          <e p="CharPickerForm.cs" t="Include" />
+          <e p="CharPickerForm.Designer.cs" t="Include" />
+          <e p="CharPickerForm.resx" t="Include" />
+          <e p="ColumnsForm.cs" t="Include" />
+          <e p="ColumnsForm.Designer.cs" t="Include" />
+          <e p="ColumnsForm.resx" t="Include" />
+          <e p="CsvImportForm.cs" t="Include" />
+          <e p="CsvImportForm.Designer.cs" t="Include" />
+          <e p="CsvImportForm.resx" t="Include" />
+          <e p="DatabaseOperationsForm.cs" t="Include" />
+          <e p="DatabaseOperationsForm.Designer.cs" t="Include" />
+          <e p="DatabaseOperationsForm.resx" t="Include" />
+          <e p="DatabaseSettingsForm.cs" t="Include" />
+          <e p="DatabaseSettingsForm.Designer.cs" t="Include" />
+          <e p="DatabaseSettingsForm.resx" t="Include" />
+          <e p="DataEditorForm.cs" t="Include" />
+          <e p="DataEditorForm.Designer.cs" t="Include" />
+          <e p="DataEditorForm.resx" t="Include" />
+          <e p="DataViewerForm.cs" t="Include" />
+          <e p="DataViewerForm.Designer.cs" t="Include" />
+          <e p="DataViewerForm.resx" t="Include" />
+          <e p="DuplicationForm.cs" t="Include" />
+          <e p="DuplicationForm.Designer.cs" t="Include" />
+          <e p="DuplicationForm.resx" t="Include" />
+          <e p="EcasActionForm.cs" t="Include" />
+          <e p="EcasActionForm.Designer.cs" t="Include" />
+          <e p="EcasActionForm.resx" t="Include" />
+          <e p="EcasConditionForm.cs" t="Include" />
+          <e p="EcasConditionForm.Designer.cs" t="Include" />
+          <e p="EcasConditionForm.resx" t="Include" />
+          <e p="EcasEventForm.cs" t="Include" />
+          <e p="EcasEventForm.Designer.cs" t="Include" />
+          <e p="EcasEventForm.resx" t="Include" />
+          <e p="EcasTriggerForm.cs" t="Include" />
+          <e p="EcasTriggerForm.Designer.cs" t="Include" />
+          <e p="EcasTriggerForm.resx" t="Include" />
+          <e p="EcasTriggersForm.cs" t="Include" />
+          <e p="EcasTriggersForm.Designer.cs" t="Include" />
+          <e p="EcasTriggersForm.resx" t="Include" />
+          <e p="EditAutoTypeItemForm.cs" t="Include" />
+          <e p="EditAutoTypeItemForm.Designer.cs" t="Include" />
+          <e p="EditAutoTypeItemForm.resx" t="Include" />
+          <e p="EditStringForm.cs" t="Include" />
+          <e p="EditStringForm.Designer.cs" t="Include" />
+          <e p="EditStringForm.resx" t="Include" />
+          <e p="EntropyForm.cs" t="Include" />
+          <e p="EntropyForm.Designer.cs" t="Include" />
+          <e p="EntropyForm.resx" t="Include" />
+          <e p="ExchangeDataForm.cs" t="Include" />
+          <e p="ExchangeDataForm.Designer.cs" t="Include" />
+          <e p="ExchangeDataForm.resx" t="Include" />
+          <e p="FieldPickerForm.cs" t="Include" />
+          <e p="FieldPickerForm.Designer.cs" t="Include" />
+          <e p="FieldPickerForm.resx" t="Include" />
+          <e p="FieldRefForm.cs" t="Include" />
+          <e p="FieldRefForm.Designer.cs" t="Include" />
+          <e p="FieldRefForm.resx" t="Include" />
+          <e p="FileBrowserForm.cs" t="Include" />
+          <e p="FileBrowserForm.Designer.cs" t="Include" />
+          <e p="FileBrowserForm.resx" t="Include" />
+          <e p="GroupForm.cs" t="Include" />
+          <e p="GroupForm.Designer.cs" t="Include" />
+          <e p="GroupForm.resx" t="Include" />
+          <e p="HelpSourceForm.cs" t="Include" />
+          <e p="HelpSourceForm.Designer.cs" t="Include" />
+          <e p="HelpSourceForm.resx" t="Include" />
+          <e p="IconPickerForm.cs" t="Include" />
+          <e p="IconPickerForm.Designer.cs" t="Include" />
+          <e p="IconPickerForm.resx" t="Include" />
+          <e p="ImportMethodForm.cs" t="Include" />
+          <e p="ImportMethodForm.Designer.cs" t="Include" />
+          <e p="ImportMethodForm.resx" t="Include" />
+          <e p="InternalBrowserForm.cs" t="Include" />
+          <e p="InternalBrowserForm.Designer.cs" t="Include" />
+          <e p="InternalBrowserForm.resx" t="Include" />
+          <e p="IOConnectionForm.cs" t="Include" />
+          <e p="IOConnectionForm.Designer.cs" t="Include" />
+          <e p="IOConnectionForm.resx" t="Include" />
+          <e p="KeyCreationForm.cs" t="Include" />
+          <e p="KeyCreationForm.Designer.cs" t="Include" />
+          <e p="KeyCreationForm.resx" t="Include" />
+          <e p="KeyPromptForm.cs" t="Include" />
+          <e p="KeyPromptForm.Designer.cs" t="Include" />
+          <e p="KeyPromptForm.resx" t="Include" />
+          <e p="LanguageForm.cs" t="Include" />
+          <e p="LanguageForm.Designer.cs" t="Include" />
+          <e p="LanguageForm.resx" t="Include" />
+          <e p="ListViewForm.cs" t="Include" />
+          <e p="ListViewForm.Designer.cs" t="Include" />
+          <e p="ListViewForm.resx" t="Include" />
+          <e p="MainForm.cs" t="Include" />
+          <e p="MainForm.Designer.cs" t="Include" />
+          <e p="MainForm.resx" t="Include" />
+          <e p="MainForm_Events.cs" t="Include" />
+          <e p="MainForm_Functions.cs" t="Include" />
+          <e p="OptionsForm.cs" t="Include" />
+          <e p="OptionsForm.Designer.cs" t="Include" />
+          <e p="OptionsForm.resx" t="Include" />
+          <e p="PluginsForm.cs" t="Include" />
+          <e p="PluginsForm.Designer.cs" t="Include" />
+          <e p="PluginsForm.resx" t="Include" />
+          <e p="PrintForm.cs" t="Include" />
+          <e p="PrintForm.Designer.cs" t="Include" />
+          <e p="PrintForm.resx" t="Include" />
+          <e p="ProxyForm.cs" t="Include" />
+          <e p="ProxyForm.Designer.cs" t="Include" />
+          <e p="ProxyForm.resx" t="Include" />
+          <e p="PwEntryForm.cs" t="Include" />
+          <e p="PwEntryForm.Designer.cs" t="Include" />
+          <e p="PwEntryForm.resx" t="Include" />
+          <e p="PwGeneratorForm.cs" t="Include" />
+          <e p="PwGeneratorForm.Designer.cs" t="Include" />
+          <e p="PwGeneratorForm.resx" t="Include" />
+          <e p="SearchForm.cs" t="Include" />
+          <e p="SearchForm.Designer.cs" t="Include" />
+          <e p="SearchForm.resx" t="Include" />
+          <e p="SingleLineEditForm.cs" t="Include" />
+          <e p="SingleLineEditForm.Designer.cs" t="Include" />
+          <e p="SingleLineEditForm.resx" t="Include" />
+          <e p="StatusLoggerForm.cs" t="Include" />
+          <e p="StatusLoggerForm.Designer.cs" t="Include" />
+          <e p="StatusLoggerForm.resx" t="Include" />
+          <e p="StatusProgressForm.cs" t="Include" />
+          <e p="StatusProgressForm.Designer.cs" t="Include" />
+          <e p="StatusProgressForm.resx" t="Include" />
+          <e p="TanWizardForm.cs" t="Include" />
+          <e p="TanWizardForm.Designer.cs" t="Include" />
+          <e p="TanWizardForm.resx" t="Include" />
+          <e p="TextEncodingForm.cs" t="Include" />
+          <e p="TextEncodingForm.Designer.cs" t="Include" />
+          <e p="TextEncodingForm.resx" t="Include" />
+          <e p="UpdateCheckForm.cs" t="Include" />
+          <e p="UpdateCheckForm.Designer.cs" t="Include" />
+          <e p="UpdateCheckForm.resx" t="Include" />
+          <e p="UrlOverrideForm.cs" t="Include" />
+          <e p="UrlOverrideForm.Designer.cs" t="Include" />
+          <e p="UrlOverrideForm.resx" t="Include" />
+          <e p="UrlOverridesForm.cs" t="Include" />
+          <e p="UrlOverridesForm.Designer.cs" t="Include" />
+          <e p="UrlOverridesForm.resx" t="Include" />
+          <e p="WebDocForm.cs" t="Include" />
+          <e p="WebDocForm.Designer.cs" t="Include" />
+          <e p="WebDocForm.resx" t="Include" />
+          <e p="XmlReplaceForm.cs" t="Include" />
+          <e p="XmlReplaceForm.Designer.cs" t="Include" />
+          <e p="XmlReplaceForm.resx" t="Include" />
+        </e>
+        <e p="KeePass.csproj" t="IncludeRecursive" />
+        <e p="KeePass.ico" t="Include" />
+        <e p="KeePass.pfx" t="Include" />
+        <e p="KeePassLib" t="Include">
+          <e p="Collections" t="Include" />
+          <e p="Cryptography" t="Include">
+            <e p="Cipher" t="Include" />
+            <e p="Hash" t="Include" />
+            <e p="KeyDerivation" t="Include" />
+            <e p="PasswordGenerator" t="Include" />
+          </e>
+          <e p="Delegates" t="Include" />
+          <e p="Interfaces" t="Include" />
+          <e p="Keys" t="Include" />
+          <e p="Native" t="Include" />
+          <e p="Resources" t="Include" />
+          <e p="Security" t="Include" />
+          <e p="Serialization" t="Include" />
+          <e p="Translation" t="Include" />
+          <e p="Utility" t="Include" />
+        </e>
+        <e p="Native" t="Include">
+          <e p="NativeMethods.cs" t="Include" />
+          <e p="NativeMethods.Defs.cs" t="Include" />
+          <e p="NativeMethods.New.cs" t="Include" />
+          <e p="NativeMethods.Structs.cs" t="Include" />
+          <e p="NativeMethods.Unix.cs" t="Include" />
+          <e p="NativeProgressDialog.cs" t="Include" />
+          <e p="ShellLinkEx.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Plugins" t="Include">
+          <e p="DefaultPluginHost.cs" t="Include" />
+          <e p="IPluginHost.cs" t="Include" />
+          <e p="PlgxCache.cs" t="Include" />
+          <e p="PlgxCsprojLoader.cs" t="Include" />
+          <e p="PlgxPlugin.cs" t="Include" />
+          <e p="PlgxPluginInfo.cs" t="Include" />
+          <e p="Plugin.cs" t="Include" />
+          <e p="PluginInfo.cs" t="Include" />
+          <e p="PluginManager.cs" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="Data" t="Include">
+            <e p="Images_App_HighRes.bin" t="Include" />
+            <e p="Images_Client_16.bin" t="Include" />
+            <e p="Images_Client_HighRes.bin" t="Include" />
+            <e p="MostPopularPasswords.txt.gz" t="Include" />
+          </e>
+          <e p="Icons" t="Include">
+            <e p="KeePass.ico" t="Include" />
+            <e p="KeePass_G.ico" t="Include" />
+            <e p="KeePass_R.ico" t="Include" />
+            <e p="KeePass_Y.ico" t="Include" />
+            <e p="LockOverlay.ico" t="Include" />
+            <e p="QuadLocked.ico" t="Include" />
+            <e p="QuadNormal.ico" t="Include" />
+            <e p="QuadNormal_G.ico" t="Include" />
+            <e p="QuadNormal_R.ico" t="Include" />
+            <e p="QuadNormal_Y.ico" t="Include" />
+          </e>
+          <e p="Images" t="Include">
+            <e p="B16x16_FontBold.png" t="Include" />
+            <e p="B16x16_FontItalic.png" t="Include" />
+            <e p="B16x16_FontStrikeout.png" t="Include" />
+            <e p="B16x16_FontUnderline.png" t="Include" />
+            <e p="B16x16_Imp_AmP.png" t="Include" />
+            <e p="B16x16_Imp_AnyPw.png" t="Include" />
+            <e p="B16x16_Imp_Chrome.png" t="Include" />
+            <e p="B16x16_Imp_CWallet.png" t="Include" />
+            <e p="B16x16_Imp_Dashlane.png" t="Include" />
+            <e p="B16x16_Imp_DataVault.png" t="Include" />
+            <e p="B16x16_Imp_DesktopKnox.png" t="Include" />
+            <e p="B16x16_Imp_Enpass.png" t="Include" />
+            <e p="B16x16_Imp_FlexWallet.png" t="Include" />
+            <e p="B16x16_Imp_HandySafe.png" t="Include" />
+            <e p="B16x16_Imp_HandySafePro.png" t="Include" />
+            <e p="B16x16_Imp_KasperskyPwMgr.png" t="Include" />
+            <e p="B16x16_Imp_KeePassX.png" t="Include" />
+            <e p="B16x16_Imp_LastPass.png" t="Include" />
+            <e p="B16x16_Imp_MSecure.png" t="Include" />
+            <e p="B16x16_Imp_NetworkPwMgr.png" t="Include" />
+            <e p="B16x16_Imp_NortonIdSafe.png" t="Include" />
+            <e p="B16x16_Imp_NPassword.png" t="Include" />
+            <e p="B16x16_Imp_OnePwPro.png" t="Include" />
+            <e p="B16x16_Imp_PassKeeper.png" t="Include" />
+            <e p="B16x16_Imp_PINs.png" t="Include" />
+            <e p="B16x16_Imp_PVault.png" t="Include" />
+            <e p="B16x16_Imp_PwAgent.png" t="Include" />
+            <e p="B16x16_Imp_PwDepot.png" t="Include" />
+            <e p="B16x16_Imp_PwMem2008.png" t="Include" />
+            <e p="B16x16_Imp_PwPrompter.png" t="Include" />
+            <e p="B16x16_Imp_PwSafe.png" t="Include" />
+            <e p="B16x16_Imp_PwSaver.png" t="Include" />
+            <e p="B16x16_Imp_PwsPlus.png" t="Include" />
+            <e p="B16x16_Imp_PwTresor.png" t="Include" />
+            <e p="B16x16_Imp_Revelation.png" t="Include" />
+            <e p="B16x16_Imp_RoboForm.png" t="Include" />
+            <e p="B16x16_Imp_SafeWallet.png" t="Include" />
+            <e p="B16x16_Imp_Security.png" t="Include" />
+            <e p="B16x16_Imp_SplashID.png" t="Include" />
+            <e p="B16x16_Imp_Steganos.png" t="Include" />
+            <e p="B16x16_Imp_StickyPw.png" t="Include" />
+            <e p="B16x16_Imp_TurboPws.png" t="Include" />
+            <e p="B16x16_Imp_VisKeeper.png" t="Include" />
+            <e p="B16x16_Imp_Whisper32.png" t="Include" />
+            <e p="B16x16_Imp_ZdnPwPro.png" t="Include" />
+            <e p="B16x16_KeePass.png" t="Include" />
+            <e p="B16x16_LockWorkspace.png" t="Include" />
+            <e p="B16x16_MenuCheck.png" t="Include" />
+            <e p="B16x16_MenuRadio.png" t="Include" />
+            <e p="B16x16_Transparent.png" t="Include" />
+            <e p="B16x16_WinFavs.png" t="Include" />
+            <e p="B19x07_3BlackDots.png" t="Include" />
+            <e p="B48x35_WritingHand.png" t="Include" />
+          </e>
+          <e p="KPRes.Generated.cs" t="Include" />
+          <e p="Nuvola" t="Include">
+            <e p="B16x16_1DownArrow.png" t="Include" />
+            <e p="B16x16_1UpArrow.png" t="Include" />
+            <e p="B16x16_2DownArrow.png" t="Include" />
+            <e p="B16x16_2UpArrow.png" t="Include" />
+            <e p="B16x16_Apply.png" t="Include" />
+            <e p="B16x16_ASCII.png" t="Include" />
+            <e p="B16x16_Attach.png" t="Include" />
+            <e p="B16x16_Binary.png" t="Include" />
+            <e p="B16x16_BlockDevice.png" t="Include" />
+            <e p="B16x16_Browser.png" t="Include" />
+            <e p="B16x16_Color_Fill.png" t="Include" />
+            <e p="B16x16_Colorize.png" t="Include" />
+            <e p="B16x16_CompFile.png" t="Include" />
+            <e p="B16x16_Configure.png" t="Include" />
+            <e p="B16x16_Cut.png" t="Include" />
+            <e p="B16x16_Edit.png" t="Include" />
+            <e p="B16x16_EditCopy.png" t="Include" />
+            <e p="B16x16_EditDelete.png" t="Include" />
+            <e p="B16x16_EditPaste.png" t="Include" />
+            <e p="B16x16_EditShred.png" t="Include" />
+            <e p="B16x16_Error.png" t="Include" />
+            <e p="B16x16_Exit.png" t="Include" />
+            <e p="B16x16_File_Locked.png" t="Include" />
+            <e p="B16x16_FileNew.png" t="Include" />
+            <e p="B16x16_FilePrint.png" t="Include" />
+            <e p="B16x16_FileQuickPrint.png" t="Include" />
+            <e p="B16x16_FileSave.png" t="Include" />
+            <e p="B16x16_FileSaveAs.png" t="Include" />
+            <e p="B16x16_Folder.png" t="Include" />
+            <e p="B16x16_Folder_Blue_Open.png" t="Include" />
+            <e p="B16x16_Folder_Home.png" t="Include" />
+            <e p="B16x16_Folder_Inbox.png" t="Include" />
+            <e p="B16x16_Folder_Locked.png" t="Include" />
+            <e p="B16x16_Folder_Outbox.png" t="Include" />
+            <e p="B16x16_Folder_Txt.png" t="Include" />
+            <e p="B16x16_Folder_Yellow_Open.png" t="Include" />
+            <e p="B16x16_FTP.png" t="Include" />
+            <e p="B16x16_Help.png" t="Include" />
+            <e p="B16x16_History.png" t="Include" />
+            <e p="B16x16_History_Clear.png" t="Include" />
+            <e p="B16x16_HTML.png" t="Include" />
+            <e p="B16x16_HwInfo.png" t="Include" />
+            <e p="B16x16_Identity.png" t="Include" />
+            <e p="B16x16_KaboodleLoop.png" t="Include" />
+            <e p="B16x16_Keyboard_Layout.png" t="Include" />
+            <e p="B16x16_KGPG_Gen.png" t="Include" />
+            <e p="B16x16_KGPG_Import.png" t="Include" />
+            <e p="B16x16_KGPG_Info.png" t="Include" />
+            <e p="B16x16_KGPG_Key1.png" t="Include" />
+            <e p="B16x16_KGPG_Key2.png" t="Include" />
+            <e p="B16x16_KGPG_Key3.png" t="Include" />
+            <e p="B16x16_KGPG_Sign.png" t="Include" />
+            <e p="B16x16_KNotes.png" t="Include" />
+            <e p="B16x16_KOrganizer.png" t="Include" />
+            <e p="B16x16_KRec_Record.png" t="Include" />
+            <e p="B16x16_KTouch.png" t="Include" />
+            <e p="B16x16_Laptop_Charge.png" t="Include" />
+            <e p="B16x16_Make_KDevelop.png" t="Include" />
+            <e p="B16x16_MessageBox_Critical.png" t="Include" />
+            <e p="B16x16_MessageBox_Info.png" t="Include" />
+            <e p="B16x16_MessageBox_Warning.png" t="Include" />
+            <e p="B16x16_Misc.png" t="Include" />
+            <e p="B16x16_No.png" t="Include" />
+            <e p="B16x16_Package_Development.png" t="Include" />
+            <e p="B16x16_Package_Settings.png" t="Include" />
+            <e p="B16x16_Personal.png" t="Include" />
+            <e p="B16x16_Redo.png" t="Include" />
+            <e p="B16x16_Reload_Page.png" t="Include" />
+            <e p="B16x16_Spreadsheet.png" t="Include" />
+            <e p="B16x16_Toggle_Log.png" t="Include" />
+            <e p="B16x16_Trashcan_Full.png" t="Include" />
+            <e p="B16x16_Undo.png" t="Include" />
+            <e p="B16x16_View_Detailed.png" t="Include" />
+            <e p="B16x16_Wizard.png" t="Include" />
+            <e p="B16x16_WWW.png" t="Include" />
+            <e p="B16x16_XMag.png" t="Include" />
+            <e p="B32x32_Trashcan_Full.png" t="Include" />
+            <e p="B48x48_Ark.png" t="Include" />
+            <e p="B48x48_Binary.png" t="Include" />
+            <e p="B48x48_BlockDevice.png" t="Include" />
+            <e p="B48x48_FilePrint.png" t="Include" />
+            <e p="B48x48_Folder_Download.png" t="Include" />
+            <e p="B48x48_Folder_Txt.png" t="Include" />
+            <e p="B48x48_Font.png" t="Include" />
+            <e p="B48x48_KCMSystem.png" t="Include" />
+            <e p="B48x48_Keyboard_Layout.png" t="Include" />
+            <e p="B48x48_KGPG_Gen.png" t="Include" />
+            <e p="B48x48_KGPG_Key2.png" t="Include" />
+            <e p="B48x48_KGPG_Sign.png" t="Include" />
+            <e p="B48x48_KMag.png" t="Include" />
+            <e p="B48x48_KOrganizer.png" t="Include" />
+            <e p="B48x48_Make_KDevelop.png" t="Include" />
+            <e p="B48x48_MessageBox_Info.png" t="Include" />
+            <e p="B48x48_Package_Settings.png" t="Include" />
+            <e p="B48x48_Run.png" t="Include" />
+            <e p="B48x48_Source_Moc.png" t="Include" />
+            <e p="B48x48_View_Detailed.png" t="Include" />
+            <e p="B48x48_Wizard.png" t="Include" />
+            <e p="B48x48_WWW.png" t="Include" />
+            <e p="B48x48_XMag.png" t="Include" />
+          </e>
+          <e p="Nuvola_Derived" t="Include">
+            <e p="B15x14_FileNew.png" t="Include" />
+            <e p="B16x16_DeleteEntry.png" t="Include" />
+            <e p="B16x16_EditCopyLink.png" t="Include" />
+            <e p="B16x16_EditCopyUrl.png" t="Include" />
+            <e p="B16x16_File_Close.png" t="Include" />
+            <e p="B16x16_File_SaveAll.png" t="Include" />
+            <e p="B16x16_File_SaveAll_Disabled.png" t="Include" />
+            <e p="B16x16_FileSave_Disabled.png" t="Include" />
+            <e p="B16x16_Folder_2.png" t="Include" />
+            <e p="B16x16_Folder_New_Ex.png" t="Include" />
+            <e p="B16x16_Key_New.png" t="Include" />
+            <e p="B16x16_TextAlignCenter.png" t="Include" />
+            <e p="B16x16_TextAlignLeft.png" t="Include" />
+            <e p="B16x16_TextAlignRight.png" t="Include" />
+            <e p="B16x16_Window_2Horz1Vert.png" t="Include" />
+            <e p="B16x16_Window_3Horz.png" t="Include" />
+          </e>
+        </e>
+        <e p="UI" t="Include">
+          <e p="AsyncPwListUpdate.cs" t="Include" />
+          <e p="BackgroundForm.cs" t="Include" />
+          <e p="BannerFactory.cs" t="Include" />
+          <e p="CheckedLVItemDXList.cs" t="Include" />
+          <e p="ColorMenuItem.cs" t="Include" />
+          <e p="ColumnProvider.cs" t="Include" />
+          <e p="ColumnProviderPool.cs" t="Include" />
+          <e p="CustomContextMenuEx.cs" t="Include" />
+          <e p="CustomContextMenuStripEx.cs" t="Include" />
+          <e p="CustomListViewEx.cs" t="Include" />
+          <e p="CustomMenuStripEx.cs" t="Include" />
+          <e p="CustomMessageFilterEx.cs" t="Include" />
+          <e p="CustomRichTextBoxEx.cs" t="Include" />
+          <e p="CustomSplitContainerEx.cs" t="Include" />
+          <e p="CustomToolStripEx.cs" t="Include" />
+          <e p="CustomTreeViewEx.cs" t="Include" />
+          <e p="DocumentManagerEx.cs" t="Include" />
+          <e p="DpiUtil.cs" t="Include" />
+          <e p="DwmUtil.cs" t="Include" />
+          <e p="DynamicMenu.cs" t="Include" />
+          <e p="EnableThemingInScope.cs" t="Include" />
+          <e p="ExpiryControlGroup.cs" t="Include" />
+          <e p="FileDialogsEx.cs" t="Include" />
+          <e p="FontUtil.cs" t="Include" />
+          <e p="GlobalWindowManager.cs" t="Include" />
+          <e p="HotKeyControlEx.cs" t="Include" />
+          <e p="IGwmWindow.cs" t="Include" />
+          <e p="ImageComboBoxEx.cs" t="Include" />
+          <e p="KeyboardControl.cs" t="Include" />
+          <e p="ListSorter.cs" t="Include" />
+          <e p="ListViewGroupingMenu.cs" t="Include" />
+          <e p="ListViewSortMenu.cs" t="Include" />
+          <e p="ListViewStateEx.cs" t="Include" />
+          <e p="MruList.cs" t="Include" />
+          <e p="NotifyIconEx.cs" t="Include" />
+          <e p="OnDemandStatusDialog.cs" t="Include" />
+          <e p="OpenWithMenu.cs" t="Include" />
+          <e p="PromptedTextBox.cs" t="Include" />
+          <e p="ProtectedDialog.cs" t="Include" />
+          <e p="PwInputControlGroup.cs" t="Include" />
+          <e p="QualityProgressBar.cs" t="Include" />
+          <e p="RichTextBoxContextMenu.cs" t="Include" />
+          <e p="RichTextBuilder.cs" t="Include" />
+          <e p="RtlAwareResizeScope.cs" t="Include" />
+          <e p="SecureTextBoxEx.cs" t="Include" />
+          <e p="ShowWarningsLogger.cs" t="Include" />
+          <e p="SplitButtonEx.cs" t="Include" />
+          <e p="StatusBarLogger.cs" t="Include" />
+          <e p="StatusUtil.cs" t="Include" />
+          <e p="TabControlEx.cs" t="Include" />
+          <e p="TaskbarList.cs" t="Include" />
+          <e p="ToolStripRendering" t="Include">
+            <e p="KeePassTsr.cs" t="Include" />
+            <e p="ProExtTsr.cs" t="Include" />
+            <e p="SystemTsr.cs" t="Include" />
+            <e p="TsrFactory.cs" t="Include" />
+            <e p="TsrPool.cs" t="Include" />
+            <e p="VisualStyleTsr.cs" t="Include" />
+            <e p="Win10Tsr.cs" t="Include" />
+            <e p="Win81Tsr.cs" t="Include" />
+          </e>
+          <e p="UISystemFonts.cs" t="Include" />
+          <e p="UIUtil.cs" t="Include" />
+          <e p="VistaTaskDialog.cs" t="Include" />
+        </e>
+        <e p="Util" t="Include">
+          <e p="AppLocator.cs" t="Include" />
+          <e p="Archive" t="Include">
+            <e p="ImageArchive.cs" t="Include" />
+            <e p="XspArchive.cs" t="Include" />
+          </e>
+          <e p="AutoType.cs" t="Include" />
+          <e p="AutoTypeCtx.cs" t="Include" />
+          <e p="BinaryDataClassifier.cs" t="Include" />
+          <e p="BinaryDataUtil.cs" t="Include" />
+          <e p="CancellableOperationEventArgs.cs" t="Include" />
+          <e p="ChildProcessesSnapshot.cs" t="Include" />
+          <e p="ClipboardContents.cs" t="Include" />
+          <e p="ClipboardEventChainBlocker.cs" t="Include" />
+          <e p="ClipboardUtil.cs" t="Include" />
+          <e p="ClipboardUtil.Unix.cs" t="Include" />
+          <e p="ClipboardUtil.Windows.cs" t="Include" />
+          <e p="CommandLineArgs.cs" t="Include" />
+          <e p="CriticalSectionEx.cs" t="Include" />
+          <e p="CustomResourceManager.cs" t="Include" />
+          <e p="EmergencySheet.cs" t="Include" />
+          <e p="EntryMenu.cs" t="Include" />
+          <e p="EntryTemplates.cs" t="Include" />
+          <e p="EntryUtil.cs" t="Include" />
+          <e p="GlobalMutexPool.cs" t="Include" />
+          <e p="HotKeyManager.cs" t="Include" />
+          <e p="IniFile.cs" t="Include" />
+          <e p="IpcBroadcast.cs" t="Include" />
+          <e p="IpcBroadcast.Fsw.cs" t="Include" />
+          <e p="IpcBroadcast.Tcp.cs" t="Include" />
+          <e p="IpcUtilEx.cs" t="Include" />
+          <e p="KeyUtil.cs" t="Include" />
+          <e p="NetUtil.cs" t="Include" />
+          <e p="PrintUtil.cs" t="Include" />
+          <e p="PwGeneratorUtil.cs" t="Include" />
+          <e p="SearchUtil.cs" t="Include" />
+          <e p="SendInputEx.cs" t="Include" />
+          <e p="SendInputExt" t="Include">
+            <e p="ISiEngine.cs" t="Include" />
+            <e p="SiCodes.cs" t="Include" />
+            <e p="SiEngineStd.cs" t="Include" />
+            <e p="SiEngineUnix.cs" t="Include" />
+            <e p="SiEngineWin.cs" t="Include" />
+            <e p="SiObf.cs" t="Include" />
+            <e p="SiWindowInfo.cs" t="Include" />
+          </e>
+          <e p="SessionLockNotifier.cs" t="Include" />
+          <e p="ShellUtil.cs" t="Include" />
+          <e p="ShutdownBlocker.cs" t="Include" />
+          <e p="Spr" t="Include">
+            <e p="SprContext.cs" t="Include" />
+            <e p="SprEncoding.cs" t="Include" />
+            <e p="SprEngine.cs" t="Include" />
+            <e p="SprEngine.PickChars.cs" t="Include" />
+            <e p="SprRefCache.cs" t="Include" />
+            <e p="SprSyntax.cs" t="Include" />
+          </e>
+          <e p="TempFilesPool.cs" t="Include" />
+          <e p="TextSimilarity.cs" t="Include" />
+          <e p="UpdateCheckEx.cs" t="Include" />
+          <e p="WinUtil.cs" t="Include" />
+          <e p="XmlSerialization" t="Include">
+            <e p="XmlSerializerEx.cs" t="Include" />
+            <e p="XmlSerializerEx.Gen.cs" t="Include" />
+          </e>
+          <e p="XmlUtil.cs" t="Include" />
+          <e p="XmlUtil.XmlReplace.cs" t="Include" />
+        </e>
+      </e>
+      <e p="KeePass.sln" t="IncludeFlat" />
+      <e p="KeePassLib" t="IncludeRecursive">
+        <e p="Collections" t="Include">
+          <e p="AutoTypeConfig.cs" t="Include" />
+          <e p="ProtectedBinaryDictionary.cs" t="Include" />
+          <e p="ProtectedBinarySet.cs" t="Include" />
+          <e p="ProtectedStringDictionary.cs" t="Include" />
+          <e p="PwObjectList.cs" t="Include" />
+          <e p="PwObjectPool.cs" t="Include" />
+          <e p="StringDictionaryEx.cs" t="Include" />
+          <e p="VariantDictionary.cs" t="Include" />
+        </e>
+        <e p="Cryptography" t="Include">
+          <e p="Cipher" t="Include">
+            <e p="ChaCha20Cipher.cs" t="Include" />
+            <e p="ChaCha20Engine.cs" t="Include" />
+            <e p="CipherPool.cs" t="Include" />
+            <e p="CtrBlockCipher.cs" t="Include" />
+            <e p="ICipherEngine.cs" t="Include" />
+            <e p="Salsa20Cipher.cs" t="Include" />
+            <e p="StandardAesEngine.cs" t="Include" />
+          </e>
+          <e p="CryptoRandom.cs" t="Include" />
+          <e p="CryptoRandomStream.cs" t="Include" />
+          <e p="CryptoUtil.cs" t="Include" />
+          <e p="Hash" t="Include">
+            <e p="Blake2b.cs" t="Include" />
+          </e>
+          <e p="HashingStreamEx.cs" t="Include" />
+          <e p="HmacOtp.cs" t="Include" />
+          <e p="KeyDerivation" t="Include">
+            <e p="AesKdf.cs" t="Include" />
+            <e p="AesKdf.GCrypt.cs" t="Include" />
+            <e p="Argon2Kdf.Core.cs" t="Include" />
+            <e p="Argon2Kdf.cs" t="Include" />
+            <e p="KdfEngine.cs" t="Include" />
+            <e p="KdfParameters.cs" t="Include" />
+            <e p="KdfPool.cs" t="Include" />
+          </e>
+          <e p="PasswordGenerator" t="Include">
+            <e p="CharSetBasedGenerator.cs" t="Include" />
+            <e p="CustomPwGenerator.cs" t="Include" />
+            <e p="CustomPwGeneratorPool.cs" t="Include" />
+            <e p="PatternBasedGenerator.cs" t="Include" />
+            <e p="PwCharSet.cs" t="Include" />
+            <e p="PwGenerator.cs" t="Include" />
+            <e p="PwProfile.cs" t="Include" />
+          </e>
+          <e p="PopularPasswords.cs" t="Include" />
+          <e p="QualityEstimation.cs" t="Include" />
+          <e p="SelfTest.cs" t="Include" />
+        </e>
+        <e p="Delegates" t="Include">
+          <e p="Handlers.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="IDeepCloneable.cs" t="Include" />
+          <e p="IStatusLogger.cs" t="Include" />
+          <e p="IStructureItem.cs" t="Include" />
+          <e p="ITimeLogger.cs" t="Include" />
+          <e p="IUIOperations.cs" t="Include" />
+          <e p="IXmlSerializerEx.cs" t="Include" />
+        </e>
+        <e p="KeePassLib.csproj" t="IncludeRecursive" />
+        <e p="KeePassLib.pfx" t="Include" />
+        <e p="Keys" t="Include">
+          <e p="CompositeKey.cs" t="Include" />
+          <e p="IUserKey.cs" t="Include" />
+          <e p="KcpCustomKey.cs" t="Include" />
+          <e p="KcpKeyFile.cs" t="Include" />
+          <e p="KcpPassword.cs" t="Include" />
+          <e p="KcpUserAccount.cs" t="Include" />
+          <e p="KeyProvider.cs" t="Include" />
+          <e p="KeyProviderPool.cs" t="Include" />
+          <e p="KeyValidator.cs" t="Include" />
+          <e p="KeyValidatorPool.cs" t="Include" />
+          <e p="UserKeyType.cs" t="Include" />
+        </e>
+        <e p="Native" t="Include">
+          <e p="ClipboardU.cs" t="Include" />
+          <e p="NativeLib.cs" t="Include" />
+          <e p="NativeMethods.cs" t="Include" />
+          <e p="NativeMethods.Unix.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="PwCustomIcon.cs" t="Include" />
+        <e p="PwDatabase.cs" t="Include" />
+        <e p="PwDefs.cs" t="Include" />
+        <e p="PwDeletedObject.cs" t="Include" />
+        <e p="PwEntry.cs" t="Include" />
+        <e p="PwEnums.cs" t="Include" />
+        <e p="PwGroup.cs" t="Include" />
+        <e p="PwUuid.cs" t="Include" />
+        <e p="Resources" t="Include">
+          <e p="KLRes.Generated.cs" t="Include" />
+          <e p="KSRes.Generated.cs" t="Include" />
+        </e>
+        <e p="Security" t="Include">
+          <e p="ProtectedBinary.cs" t="Include" />
+          <e p="ProtectedString.cs" t="Include" />
+          <e p="XorredBuffer.cs" t="Include" />
+        </e>
+        <e p="Serialization" t="Include">
+          <e p="BinaryReaderEx.cs" t="Include" />
+          <e p="FileLock.cs" t="Include" />
+          <e p="FileTransactionEx.cs" t="Include" />
+          <e p="HashedBlockStream.cs" t="Include" />
+          <e p="HmacBlockStream.cs" t="Include" />
+          <e p="IOConnection.cs" t="Include" />
+          <e p="IOConnectionInfo.cs" t="Include" />
+          <e p="IocProperties.cs" t="Include" />
+          <e p="IocPropertyInfo.cs" t="Include" />
+          <e p="IocPropertyInfoPool.cs" t="Include" />
+          <e p="KdbxFile.cs" t="Include" />
+          <e p="KdbxFile.Read.cs" t="Include" />
+          <e p="KdbxFile.Read.Streamed.cs" t="Include" />
+          <e p="KdbxFile.Write.cs" t="Include" />
+          <e p="OldFormatException.cs" t="Include" />
+        </e>
+        <e p="Translation" t="Include">
+          <e p="KPControlCustomization.cs" t="Include" />
+          <e p="KPFormCustomization.cs" t="Include" />
+          <e p="KPStringTable.cs" t="Include" />
+          <e p="KPStringTableItem.cs" t="Include" />
+          <e p="KPTranslation.cs" t="Include" />
+          <e p="KPTranslationProperties.cs" t="Include" />
+        </e>
+        <e p="Utility" t="Include">
+          <e p="AppLogEx.cs" t="Include" />
+          <e p="GfxUtil.cs" t="Include" />
+          <e p="MemUtil.cs" t="Include" />
+          <e p="MessageService.cs" t="Include" />
+          <e p="MonoWorkarounds.cs" t="Include" />
+          <e p="StrUtil.cs" t="Include" />
+          <e p="TimeUtil.cs" t="Include" />
+          <e p="TypeOverridePool.cs" t="Include" />
+          <e p="UrlUtil.cs" t="Include" />
+          <e p="XmlUtilEx.cs" t="Include" />
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Translation" t="ExcludeRecursive">
+        <e p="TrlUtil" t="IncludeRecursive">
+          <e p="AccelKeysCheck.cs" t="Include" />
+          <e p="FormTrlMgr.cs" t="Include" />
+          <e p="MainForm.cs" t="Include" />
+          <e p="MainForm.Designer.cs" t="Include" />
+          <e p="MainForm.resx" t="Include" />
+          <e p="obj" t="ExcludeRecursive" />
+          <e p="PreviewForm.cs" t="Include" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="AssemblyInfo.cs" t="Include" />
+            <e p="Resources.Designer.cs" t="Include" />
+            <e p="Resources.resx" t="Include" />
+            <e p="Settings.Designer.cs" t="Include" />
+            <e p="Settings.settings" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="B16x16_Binary.png" t="Include" />
+            <e p="B16x16_Down.png" t="Include" />
+            <e p="B16x16_FileSave.png" t="Include" />
+            <e p="B16x16_FileSaveAs.png" t="Include" />
+            <e p="B16x16_Folder_Yellow_Open.png" t="Include" />
+            <e p="B16x16_Keyboard_Layout.png" t="Include" />
+            <e p="B16x16_KRec_Record.png" t="Include" />
+            <e p="B16x16_LedGreen.png" t="Include" />
+            <e p="B16x16_LedLightBlue.png" t="Include" />
+            <e p="B16x16_LedLightGreen.png" t="Include" />
+            <e p="B16x16_LedOrange.png" t="Include" />
+            <e p="B16x16_View_Remove.png" t="Include" />
+            <e p="KeePass.ico" t="Include" />
+          </e>
+          <e p="TrlImport.cs" t="Include" />
+          <e p="TrlUtil.csproj" t="IncludeRecursive" />
+        </e>
+      </e>
+    </e>
+  </component>
+</project>

@@ -1,0 +1,6 @@
+/.vs/
+*.user
+Build
+Translation
+bin
+obj
