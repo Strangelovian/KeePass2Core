@@ -355,7 +355,7 @@ namespace KeePassLib.Utility
 			if(bNbsp) str = str.Replace(" ", @"&nbsp;"); // Before <br />
 
 			str = NormalizeNewLines(str, false);
-			str = str.Replace("\n", @"<br />" + MessageService.NewLine);
+			str = str.Replace("\n", @"<br />" + NewLine);
 
 			return str;
 		}
@@ -529,39 +529,39 @@ namespace KeePassLib.Utility
 			string strText = string.Empty;
 			
 			if(!string.IsNullOrEmpty(excp.Message))
-				strText += excp.Message + MessageService.NewLine;
+				strText += excp.Message + NewLine;
 #if !KeePassLibSD
 			if(!string.IsNullOrEmpty(excp.Source))
-				strText += excp.Source + MessageService.NewLine;
+				strText += excp.Source + NewLine;
 #endif
 			if(!string.IsNullOrEmpty(excp.StackTrace))
-				strText += excp.StackTrace + MessageService.NewLine;
+				strText += excp.StackTrace + NewLine;
 #if !KeePassLibSD
 #if !KeePassUAP
 			if(excp.TargetSite != null)
-				strText += excp.TargetSite.ToString() + MessageService.NewLine;
+				strText += excp.TargetSite.ToString() + NewLine;
 #endif
 
 			if(excp.Data != null)
 			{
-				strText += MessageService.NewLine;
+				strText += NewLine;
 				foreach(DictionaryEntry de in excp.Data)
 					strText += @"'" + de.Key + @"' -> '" + de.Value + @"'" +
-						MessageService.NewLine;
+						NewLine;
 			}
 #endif
 
 			if(excp.InnerException != null)
 			{
-				strText += MessageService.NewLine + "Inner:" + MessageService.NewLine;
+				strText += NewLine + "Inner:" + NewLine;
 				if(!string.IsNullOrEmpty(excp.InnerException.Message))
-					strText += excp.InnerException.Message + MessageService.NewLine;
+					strText += excp.InnerException.Message + NewLine;
 #if !KeePassLibSD
 				if(!string.IsNullOrEmpty(excp.InnerException.Source))
-					strText += excp.InnerException.Source + MessageService.NewLine;
+					strText += excp.InnerException.Source + NewLine;
 #endif
 				if(!string.IsNullOrEmpty(excp.InnerException.StackTrace))
-					strText += excp.InnerException.StackTrace + MessageService.NewLine;
+					strText += excp.InnerException.StackTrace + NewLine;
 #if !KeePassLibSD
 #if !KeePassUAP
 				if(excp.InnerException.TargetSite != null)
@@ -570,10 +570,10 @@ namespace KeePassLib.Utility
 
 				if(excp.InnerException.Data != null)
 				{
-					strText += MessageService.NewLine;
+					strText += NewLine;
 					foreach(DictionaryEntry de in excp.InnerException.Data)
 						strText += @"'" + de.Key + @"' -> '" + de.Value + @"'" +
-							MessageService.NewLine;
+							NewLine;
 				}
 #endif
 			}
@@ -1214,7 +1214,7 @@ namespace KeePassLib.Utility
 
 		public static string GetNewLineSeq(string str)
 		{
-			if(str == null) { Debug.Assert(false); return MessageService.NewLine; }
+			if(str == null) { Debug.Assert(false); return NewLine; }
 
 			int n = str.Length, nLf = 0, nCr = 0, nCrLf = 0;
 			char chLast = char.MinValue;
@@ -1236,7 +1236,7 @@ namespace KeePassLib.Utility
 			nLf -= nCrLf;
 
 			int nMax = Math.Max(nCrLf, Math.Max(nCr, nLf));
-			if(nMax == 0) return MessageService.NewLine;
+			if(nMax == 0) return NewLine;
 
 			if(nCrLf == nMax) return "\r\n";
 			return ((nLf == nMax) ? "\n" : "\r");
