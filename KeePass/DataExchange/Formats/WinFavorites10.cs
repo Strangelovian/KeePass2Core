@@ -203,7 +203,7 @@ namespace KeePass.DataExchange.Formats
 				try { Directory.CreateDirectory(strDir); }
 				catch(Exception exDir)
 				{
-					throw new Exception(strDir + MessageService.NewParagraph + exDir.Message);
+					throw new Exception(strDir + StrUtil.NewParagraph + exDir.Message);
 				}
 
 				WaitForDirCommit(strDir, true);
@@ -235,7 +235,7 @@ namespace KeePass.DataExchange.Formats
 			}
 			catch(Exception exWrite)
 			{
-				throw new Exception(strFile + MessageService.NewParagraph + exWrite.Message);
+				throw new Exception(strFile + StrUtil.NewParagraph + exWrite.Message);
 			}
 		}
 

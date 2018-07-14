@@ -238,8 +238,8 @@ namespace KeePassLib.Keys
 
 			KdfEngine kdf = KdfPool.Get(p.KdfUuid);
 			if(kdf == null) // CryptographicExceptions are translated to "file corrupted"
-				throw new Exception(KLRes.UnknownKdf + MessageService.NewParagraph +
-					KLRes.FileNewVerOrPlgReq + MessageService.NewParagraph +
+				throw new Exception(KLRes.UnknownKdf + StrUtil.NewParagraph +
+					KLRes.FileNewVerOrPlgReq + StrUtil.NewParagraph +
 					"UUID: " + p.KdfUuid.ToHexString() + ".");
 
 			byte[] pbTrf32 = kdf.Transform(pbRaw32, p);
@@ -281,7 +281,7 @@ namespace KeePassLib.Keys
 		{
 			get
 			{
-				return KLRes.InvalidCompositeKey + MessageService.NewParagraph +
+				return KLRes.InvalidCompositeKey + StrUtil.NewParagraph +
 					KLRes.InvalidCompositeKeyHint;
 			}
 		}

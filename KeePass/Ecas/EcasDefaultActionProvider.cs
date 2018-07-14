@@ -322,7 +322,7 @@ namespace KeePass.Ecas
 			}
 			catch(Exception ex)
 			{
-				throw new Exception(strCmd + MessageService.NewParagraph + ex.Message);
+				throw new Exception(strCmd + StrUtil.NewParagraph + ex.Message);
 			}
 			finally
 			{
@@ -347,7 +347,7 @@ namespace KeePass.Ecas
 			}
 
 			if(t == null) throw new Exception(KPRes.ObjectNotFound +
-				MessageService.NewParagraph + KPRes.TriggerName + ": " + strName + ".");
+				StrUtil.NewParagraph + KPRes.TriggerName + ": " + strName + ".");
 
 			if(uState == IdTriggerOn) t.On = true;
 			else if(uState == IdTriggerOff) t.On = false;
@@ -702,7 +702,7 @@ namespace KeePass.Ecas
 				string str = (strMain ?? string.Empty);
 				if(!string.IsNullOrEmpty(strText))
 				{
-					if(str.Length > 0) str += MessageService.NewParagraph;
+					if(str.Length > 0) str += StrUtil.NewParagraph;
 					str += strText;
 				}
 

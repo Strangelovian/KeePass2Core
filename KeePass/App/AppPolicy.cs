@@ -361,7 +361,7 @@ namespace KeePass.App
 
 		public static string RequiredPolicyMessage(AppPolicyId flag)
 		{
-			string str = KPRes.PolicyDisallowed + MessageService.NewParagraph;
+			string str = KPRes.PolicyDisallowed + StrUtil.NewParagraph;
 			str += KPRes.PolicyRequiredFlag + ":" + StrUtil.NewLine;
 			str += PolicyToString(flag, true);
 

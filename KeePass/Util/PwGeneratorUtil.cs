@@ -166,8 +166,8 @@ namespace KeePass.Util
 							bAcceptable = false; // Silently try again
 						else
 						{
-							string strText = str + MessageService.NewParagraph +
-								KPRes.GenPwSprVariant + MessageService.NewParagraph +
+							string strText = str + StrUtil.NewParagraph +
+								KPRes.GenPwSprVariant + StrUtil.NewParagraph +
 								KPRes.GenPwAccept;
 
 							if(!MessageService.AskYesNo(strText, null, false))

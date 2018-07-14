@@ -180,7 +180,7 @@ namespace KeePass.Util
 			// if(!string.IsNullOrEmpty(strError))
 			// {
 			//	MessageService.ShowWarning(args.Sequence +
-			//		MessageService.NewParagraph + strError);
+			//		StrUtil.NewParagraph + strError);
 			//	return false;
 			// }
 
@@ -196,7 +196,7 @@ namespace KeePass.Util
 				catch(SecurityException exSec) { strError = exSec.Message; }
 				catch(Exception ex)
 				{
-					strError = args.Sequence + MessageService.NewParagraph +
+					strError = args.Sequence + StrUtil.NewParagraph +
 						ex.Message;
 				}
 

@@ -703,7 +703,7 @@ namespace KeePass.DataExchange
 
 				if(!bSep)
 				{
-					if(strNotes.Length > 0) strNotes += MessageService.NewParagraph;
+					if(strNotes.Length > 0) strNotes += StrUtil.NewParagraph;
 					bSep = true;
 				}
 
@@ -722,7 +722,7 @@ namespace KeePass.DataExchange
 				(peSource.AutoType.AssociationsCount == 0)) // Avoid broken indices
 			{
 				if(strNotes.Length > 0)
-					sbAppend.Append(MessageService.NewParagraph);
+					sbAppend.Append(StrUtil.NewParagraph);
 
 				sbAppend.Append(AutoTypePrefix);
 				sbAppend.Append(@": ");
@@ -739,7 +739,7 @@ namespace KeePass.DataExchange
 				if(bSeparator == false)
 				{
 					if(strNotes.Length > 0)
-						sbAppend.Append(MessageService.NewParagraph);
+						sbAppend.Append(StrUtil.NewParagraph);
 
 					bSeparator = true;
 				}
@@ -800,7 +800,7 @@ namespace KeePass.DataExchange
 			{
 				StringBuilder sbAppend = new StringBuilder();
 
-				sbAppend.Append(MessageService.NewParagraph);
+				sbAppend.Append(StrUtil.NewParagraph);
 				sbAppend.Append(UrlOverridePrefix);
 				sbAppend.Append(@" ");
 				sbAppend.Append(peSource.OverrideUrl);

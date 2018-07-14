@@ -1034,14 +1034,14 @@ namespace KeePass.UI
 			string strNotes = pg.Notes.Trim();
 			if(strNotes.Length > 0)
 			{
-				sb.Append(MessageService.NewParagraph);
+				sb.Append(StrUtil.NewParagraph);
 				sb.Append(strNotes);
 			}
 			else return null;
 
 			// uint uSubGroups, uEntries;
 			// pg.GetCounts(true, out uSubGroups, out uEntries);
-			// sb.Append(MessageService.NewParagraph);
+			// sb.Append(StrUtil.NewParagraph);
 			// sb.Append(KPRes.Subgroups); sb.Append(": "); sb.Append(uSubGroups);
 			// sb.Append(StrUtil.NewLine);
 			// sb.Append(KPRes.Entries); sb.Append(": "); sb.Append(uEntries);

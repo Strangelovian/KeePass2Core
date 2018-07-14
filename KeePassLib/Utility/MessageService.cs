@@ -74,15 +74,6 @@ namespace KeePassLib.Utility
 #endif
 		private const MessageBoxIcon m_mbiQuestion = MessageBoxIcon.Question;
 
-		public static string NewParagraph
-		{
-#if !KeePassLibSD
-			get { return Environment.NewLine + Environment.NewLine; }
-#else
-			get { return "\r\n\r\n"; }
-#endif
-		}
-
 		public static uint CurrentMessageCount
 		{
 			get { return m_uCurrentMessageCount; }
@@ -101,7 +92,7 @@ namespace KeePassLib.Utility
 		{
 			if(vLines == null) return string.Empty;
 
-			string strNewPara = MessageService.NewParagraph;
+			string strNewPara = StrUtil.NewParagraph;
 
 			StringBuilder sbText = new StringBuilder();
 			bool bSeparator = false;
@@ -272,10 +263,10 @@ namespace KeePassLib.Utility
 			++m_uCurrentMessageCount;
 
 			string strTitle = PwDefs.ShortProductName + " - " + KLRes.FatalError;
-			string strText = KLRes.FatalErrorText + MessageService.NewParagraph +
-				KLRes.ErrorInClipboard + MessageService.NewParagraph +
+			string strText = KLRes.FatalErrorText + StrUtil.NewParagraph +
+				KLRes.ErrorInClipboard + StrUtil.NewParagraph +
 				// Please send it to the KeePass developers.
-				// KLRes.ErrorFeedbackRequest + MessageService.NewParagraph +
+				// KLRes.ErrorFeedbackRequest + StrUtil.NewParagraph +
 				ObjectsToMessage(vLines);
 
 			try
@@ -402,13 +393,13 @@ namespace KeePassLib.Utility
 			string str = string.Empty;
 
 			if(!string.IsNullOrEmpty(strFilePath))
-				str += strFilePath + MessageService.NewParagraph;
+				str += strFilePath + StrUtil.NewParagraph;
 
 			str += KLRes.FileLoadFailed;
 
 			if((ex != null) && !string.IsNullOrEmpty(ex.Message))
 			{
-				str += MessageService.NewParagraph;
+				str += StrUtil.NewParagraph;
 				if(!bFullException) str += ex.Message;
 				else str += ObjectsToMessage(new object[] { ex }, true);
 			}
@@ -421,15 +412,15 @@ namespace KeePassLib.Utility
 		{
 			string str = string.Empty;
 			if(!string.IsNullOrEmpty(strFilePath))
-				str += strFilePath + MessageService.NewParagraph;
+				str += strFilePath + StrUtil.NewParagraph;
 
 			str += KLRes.FileSaveFailed;
 
 			if((ex != null) && !string.IsNullOrEmpty(ex.Message))
-				str += MessageService.NewParagraph + ex.Message;
+				str += StrUtil.NewParagraph + ex.Message;
 
 			if(bCorruptionWarning)
-				str += MessageService.NewParagraph + KLRes.FileSaveCorruptionWarning;
+				str += StrUtil.NewParagraph + KLRes.FileSaveCorruptionWarning;
 
 			return str;
 		}

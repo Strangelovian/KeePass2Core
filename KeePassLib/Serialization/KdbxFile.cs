@@ -402,8 +402,8 @@ namespace KeePassLib.Serialization
 			ICipherEngine iCipher = CipherPool.GlobalPool.GetCipher(pu);
 			if(iCipher == null) // CryptographicExceptions are translated to "file corrupted"
 				throw new Exception(KLRes.FileUnknownCipher +
-					MessageService.NewParagraph + KLRes.FileNewVerOrPlgReq +
-					MessageService.NewParagraph + "UUID: " + pu.ToHexString() + ".");
+					StrUtil.NewParagraph + KLRes.FileNewVerOrPlgReq +
+					StrUtil.NewParagraph + "UUID: " + pu.ToHexString() + ".");
 
 			ICipherEngine2 iCipher2 = (iCipher as ICipherEngine2);
 			if(iCipher2 != null)

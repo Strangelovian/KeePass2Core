@@ -576,7 +576,7 @@ namespace TrlUtil
 				string strAccel = AccelKeysCheck.Validate(m_trl);
 				if(strAccel != null)
 					ShowValidationWarning("The following accelerator keys collide:" +
-						MessageService.NewParagraph + strAccel);
+						StrUtil.NewParagraph + strAccel);
 			}
 			catch(Exception) { Debug.Assert(false); }
 		}
@@ -586,11 +586,11 @@ namespace TrlUtil
 			if(string.IsNullOrEmpty(strText)) { Debug.Assert(false); return; }
 
 			const string strContinue = @"Click [OK] to continue saving.";
-			string str = strText + MessageService.NewParagraph + strContinue;
+			string str = strText + StrUtil.NewParagraph + strContinue;
 
 			if(!VistaTaskDialog.ShowMessageBox(str, "Validation Warning",
 				TrlUtilName, VtdIcon.Warning, this))
-				MessageBox.Show(this, "Validation Warning!" + MessageService.NewParagraph +
+				MessageBox.Show(this, "Validation Warning!" + StrUtil.NewParagraph +
 					str, TrlUtilName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 		}
 
@@ -619,10 +619,10 @@ namespace TrlUtil
 						if(bWordEn && (strTrl.IndexOf(strWord) < 0) &&
 							(strTrl.IndexOf(strWord, StrUtil.CaseIgnoreCmp) >= 0))
 							ShowValidationWarning("The English string" +
-								MessageService.NewParagraph + strEn + MessageService.NewParagraph +
+								StrUtil.NewParagraph + strEn + StrUtil.NewParagraph +
 								@"contains the case-sensitive word '" + strWord +
 								@"', but the translated string does not:" +
-								MessageService.NewParagraph + strTrl);
+								StrUtil.NewParagraph + strTrl);
 					}
 
 					// Check 3 dots
@@ -630,9 +630,9 @@ namespace TrlUtil
 					bool bEllTrl = (strTrl.EndsWith("...") || strTrl.EndsWith(@"…"));
 					if(bEllEn && !bEllTrl && !bRtl) // Check doesn't support RTL
 						ShowValidationWarning("The English string" +
-							MessageService.NewParagraph + strEn + MessageService.NewParagraph +
+							StrUtil.NewParagraph + strEn + StrUtil.NewParagraph +
 							"ends with 3 dots, but the translated string does not:" +
-							MessageService.NewParagraph + strTrl);
+							StrUtil.NewParagraph + strTrl);
 				}
 			}
 		}

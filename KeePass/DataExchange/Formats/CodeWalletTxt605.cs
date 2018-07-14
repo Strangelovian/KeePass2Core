@@ -108,7 +108,7 @@ namespace KeePass.DataExchange.Formats
 					{
 						pe.Strings.Set(strLastIndexedItem, new ProtectedString(
 							false, pe.Strings.ReadSafe(strLastIndexedItem) +
-							MessageService.NewParagraph + strLine));
+							StrUtil.NewParagraph + strLine));
 					}
 
 					bEmptyEntry = false;

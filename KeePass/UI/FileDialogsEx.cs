@@ -98,9 +98,9 @@ namespace KeePass.UI
 				}
 			}
 
-			string strMessage = (bFile ? (strFile + MessageService.NewParagraph) : string.Empty);
+			string strMessage = (bFile ? (strFile + StrUtil.NewParagraph) : string.Empty);
 			strMessage += KPRes.DatabaseModifiedNoDot + "." +
-				MessageService.NewParagraph + KPRes.SaveBeforeCloseQuestion;
+				StrUtil.NewParagraph + KPRes.SaveBeforeCloseQuestion;
 			return MessageService.Ask(strMessage, KPRes.SaveBeforeCloseTitle,
 				MessageBoxButtons.YesNoCancel);
 		}

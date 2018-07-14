@@ -1110,7 +1110,7 @@ namespace KeePass.Forms
 
 			if(UIUtil.ShowDialogAndDestroy(lf) == DialogResult.OK)
 			{
-				string str = KPRes.LanguageSelected + MessageService.NewParagraph +
+				string str = KPRes.LanguageSelected + StrUtil.NewParagraph +
 					KPRes.RestartKeePassQuestion;
 
 				if(MessageService.AskYesNo(str))

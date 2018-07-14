@@ -189,8 +189,8 @@ namespace KeePass.Forms
 				if(uPwLen == 0)
 				{
 					if(!MessageService.AskYesNo(KPRes.EmptyMasterPw +
-						MessageService.NewParagraph + KPRes.EmptyMasterPwHint +
-						MessageService.NewParagraph + KPRes.EmptyMasterPwQuestion,
+						StrUtil.NewParagraph + KPRes.EmptyMasterPwHint +
+						StrUtil.NewParagraph + KPRes.EmptyMasterPwQuestion,
 						null, false))
 					{
 						return false;

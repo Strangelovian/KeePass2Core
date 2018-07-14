@@ -916,7 +916,7 @@ namespace KeePass.Util.Spr
 				}
 				catch(Exception ex)
 				{
-					string strMsg = strCmd + MessageService.NewParagraph + ex.Message;
+					string strMsg = strCmd + StrUtil.NewParagraph + ex.Message;
 					MessageService.ShowWarning(strMsg);
 				}
 				finally

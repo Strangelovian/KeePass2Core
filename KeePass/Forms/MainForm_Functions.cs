@@ -2259,8 +2259,8 @@ namespace KeePass.Forms
 				while(true)
 				{
 					MessageService.ShowInfo(pwOpenedDb.IOConnectionInfo.GetDisplayName() +
-						MessageService.NewParagraph + KPRes.MasterKeyChangeForce +
-						MessageService.NewParagraph + KPRes.MasterKeyChangeInfo);
+						StrUtil.NewParagraph + KPRes.MasterKeyChangeForce +
+						StrUtil.NewParagraph + KPRes.MasterKeyChangeInfo);
 					if(ChangeMasterKey(pwOpenedDb)) break;
 					if(!AppPolicy.Current.ChangeMasterKey) break; // Prevent endless loop
 				}
@@ -2268,8 +2268,8 @@ namespace KeePass.Forms
 			else if(bMkChangeRec)
 			{
 				if(MessageService.AskYesNo(pwOpenedDb.IOConnectionInfo.GetDisplayName() +
-					MessageService.NewParagraph + KPRes.MasterKeyChangeRec +
-					MessageService.NewParagraph + KPRes.MasterKeyChangeQ))
+					StrUtil.NewParagraph + KPRes.MasterKeyChangeRec +
+					StrUtil.NewParagraph + KPRes.MasterKeyChangeQ))
 					ChangeMasterKey(pwOpenedDb);
 			}
 
@@ -4120,7 +4120,7 @@ namespace KeePass.Forms
 
 			string strText = string.Empty;
 			if(ioc.GetDisplayName().Length > 0)
-				strText += ioc.GetDisplayName() + MessageService.NewParagraph;
+				strText += ioc.GetDisplayName() + StrUtil.NewParagraph;
 			strText += KPRes.FileChanged;
 
 			dlg.CommandLinks = true;
@@ -4137,11 +4137,11 @@ namespace KeePass.Forms
 			if(dlg.ShowDialog()) dr = (DialogResult)dlg.Result;
 			else
 			{
-				strText += MessageService.NewParagraph;
+				strText += StrUtil.NewParagraph;
 				strText += @"[" + KPRes.Yes + @"]: " + KPRes.Synchronize + @". " +
-					KPRes.FileChangedSync + MessageService.NewParagraph;
+					KPRes.FileChangedSync + StrUtil.NewParagraph;
 				strText += @"[" + KPRes.No + @"]: " + KPRes.Overwrite + @". " +
-					KPRes.FileChangedOverwrite + MessageService.NewParagraph;
+					KPRes.FileChangedOverwrite + StrUtil.NewParagraph;
 				strText += @"[" + KPRes.Cancel + @"]: " + KPRes.FileSaveQOpCancel;
 
 				dr = MessageService.Ask(strText, PwDefs.ShortProductName,
@@ -4393,7 +4393,7 @@ namespace KeePass.Forms
 					string strText = (bSingle ? KPRes.DeleteEntriesQuestionSingle :
 						KPRes.DeleteEntriesQuestion);
 					if(strSummary.Length > 0)
-						strText += MessageService.NewParagraph + strSummary;
+						strText += StrUtil.NewParagraph + strSummary;
 
 					if(!MessageService.AskYesNo(strText, (bSingle ?
 						KPRes.DeleteEntriesTitleSingle : KPRes.DeleteEntriesTitle)))
@@ -4425,7 +4425,7 @@ namespace KeePass.Forms
 					string strText = (bSingle ? KPRes.RecycleEntryConfirmSingle :
 						KPRes.RecycleEntryConfirm);
 					if(strSummary.Length > 0)
-						strText += MessageService.NewParagraph + strSummary;
+						strText += StrUtil.NewParagraph + strSummary;
 
 					if(!MessageService.AskYesNo(strText, (bSingle ?
 						KPRes.DeleteEntriesTitleSingle : KPRes.DeleteEntriesTitle)))
@@ -4489,7 +4489,7 @@ namespace KeePass.Forms
 
 			string strContent = EntryUtil.CreateSummaryList(pg, false);
 			if(strContent.Length > 0)
-				strContent = KPRes.DeleteGroupInfo + MessageService.NewParagraph +
+				strContent = KPRes.DeleteGroupInfo + StrUtil.NewParagraph +
 					strContent;
 
 			if(bPermanent)
@@ -4511,7 +4511,7 @@ namespace KeePass.Forms
 				{
 					string strText = KPRes.DeleteGroupQuestion;
 					if(strContent.Length > 0)
-						strText += MessageService.NewParagraph + strContent;
+						strText += StrUtil.NewParagraph + strContent;
 
 					if(!MessageService.AskYesNo(strText, KPRes.DeleteGroupTitle))
 						return;
@@ -4540,7 +4540,7 @@ namespace KeePass.Forms
 				{
 					string strText = KPRes.RecycleGroupConfirm;
 					if(strContent.Length > 0)
-						strText += MessageService.NewParagraph + strContent;
+						strText += StrUtil.NewParagraph + strContent;
 
 					if(!MessageService.AskYesNo(strText, KPRes.DeleteGroupTitle))
 						return;
@@ -4594,7 +4594,7 @@ namespace KeePass.Forms
 			{
 				string strText = KPRes.EmptyRecycleBinQuestion;
 				if(strSummary.Length > 0)
-					strText += MessageService.NewParagraph + strSummary;
+					strText += StrUtil.NewParagraph + strSummary;
 
 				if(!MessageService.AskYesNo(strText))
 					return;
@@ -4784,8 +4784,8 @@ namespace KeePass.Forms
 			UIUtil.DestroyForm(kcf);
 			UpdateUIState(false); // Show modified state in the UI
 
-			string str = KPRes.MasterKeyChanged + MessageService.NewParagraph +
-				KPRes.MasterKeyChangedSave + MessageService.NewParagraph +
+			string str = KPRes.MasterKeyChanged + StrUtil.NewParagraph +
+				KPRes.MasterKeyChangedSave + StrUtil.NewParagraph +
 				KPRes.FileSaveQ;
 
 			VistaTaskDialog dlg = new VistaTaskDialog();
@@ -5585,11 +5585,11 @@ namespace KeePass.Forms
 			{
 				string strFile = ioc.GetDisplayName();
 				if(!string.IsNullOrEmpty(strFile))
-					str += strFile + MessageService.NewParagraph;
+					str += strFile + StrUtil.NewParagraph;
 			}
 
-			str += KPRes.UuidDupInDb + MessageService.NewParagraph +
-				KPRes.CorruptionByExt + MessageService.NewParagraph +
+			str += KPRes.UuidDupInDb + StrUtil.NewParagraph +
+				KPRes.CorruptionByExt + StrUtil.NewParagraph +
 				KPRes.UuidFix;
 
 			if(VistaTaskDialog.ShowMessageBoxEx(str, null,

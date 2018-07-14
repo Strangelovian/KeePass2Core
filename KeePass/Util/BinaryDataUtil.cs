@@ -141,7 +141,7 @@ namespace KeePass.Util
 				!opt.ReadOnly)
 			{
 				if(FileDialogsEx.CheckAttachmentSize(pbModData.LongLength,
-					KPRes.AttachFailed + MessageService.NewParagraph + strName))
+					KPRes.AttachFailed + StrUtil.NewParagraph + strName))
 					r = new ProtectedBinary(pb.IsProtected, pbModData);
 			}
 
@@ -218,7 +218,7 @@ namespace KeePass.Util
 				Thread th = new Thread(pts);
 				th.Start(psi);
 
-				string strMsgMain = KPRes.AttachExtOpened + MessageService.NewParagraph +
+				string strMsgMain = KPRes.AttachExtOpened + StrUtil.NewParagraph +
 					KPRes.AttachExtOpenedPost + ":";
 				string strMsgImp = KPRes.Import;
 				string strMsgImpDesc = KPRes.AttachExtImportDesc;
@@ -317,7 +317,7 @@ namespace KeePass.Util
 
 		private static bool AskForRetry(string strObj, string strText)
 		{
-			string strContent = strObj + MessageService.NewParagraph + strText;
+			string strContent = strObj + StrUtil.NewParagraph + strText;
 
 			int i = VistaTaskDialog.ShowMessageBoxEx(strContent, null,
 				PwDefs.ShortProductName, VtdIcon.Warning, null,

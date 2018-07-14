@@ -88,8 +88,8 @@ namespace KeePass.DataExchange.Formats
 			try { xsl.Load(strXslFile); }
 			catch(Exception exXsl)
 			{
-				throw new NotSupportedException(strXslFile + MessageService.NewParagraph +
-					KPRes.NoXslFile + MessageService.NewParagraph + exXsl.Message);
+				throw new NotSupportedException(strXslFile + StrUtil.NewParagraph +
+					KPRes.NoXslFile + StrUtil.NewParagraph + exXsl.Message);
 			}
 
 			byte[] pbData;

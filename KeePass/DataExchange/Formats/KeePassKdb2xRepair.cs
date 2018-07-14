@@ -59,8 +59,8 @@ namespace KeePass.DataExchange.Formats
 		public override bool TryBeginImport()
 		{
 			string strTitle = KPRes.Warning + "!";
-			string strMsg = KPRes.RepairModeInt + MessageService.NewParagraph +
-				KPRes.RepairModeUse + MessageService.NewParagraph +
+			string strMsg = KPRes.RepairModeInt + StrUtil.NewParagraph +
+				KPRes.RepairModeUse + StrUtil.NewParagraph +
 				KPRes.RepairModeQ;
 
 			int iYes = (int)DialogResult.Yes;
@@ -69,7 +69,7 @@ namespace KeePass.DataExchange.Formats
 				PwDefs.ShortProductName, VtdIcon.Warning, null,
 				KPRes.YesCmd, iYes, KPRes.NoCmd, iNo);
 			if(r < 0)
-				r = (MessageService.AskYesNo(strTitle + MessageService.NewParagraph +
+				r = (MessageService.AskYesNo(strTitle + StrUtil.NewParagraph +
 					strMsg, PwDefs.ShortProductName, false, MessageBoxIcon.Warning) ?
 					iYes : iNo);
 

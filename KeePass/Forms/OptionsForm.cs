@@ -680,8 +680,8 @@ namespace KeePass.Forms
 
 			if(bAltMod)
 			{
-				if(!MessageService.AskYesNo(KPRes.HotKeyAltOnly + MessageService.NewParagraph +
-					KPRes.HotKeyAltOnlyHint + MessageService.NewParagraph +
+				if(!MessageService.AskYesNo(KPRes.HotKeyAltOnly + StrUtil.NewParagraph +
+					KPRes.HotKeyAltOnlyHint + StrUtil.NewParagraph +
 					KPRes.HotKeyAltOnlyQuestion, null, false))
 					return false;
 			}

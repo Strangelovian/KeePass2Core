@@ -201,8 +201,8 @@ namespace KeePass.Ecas
 			if(bUIStateUpd)
 			{
 				string str = KPRes.Event + ": '" + KPRes.UpdatedUIState + "'." +
-					MessageService.NewParagraph + KPRes.TriggerEventTypeUnknown +
-					MessageService.NewParagraph + KPRes.MoreInfo + ":" +
+					StrUtil.NewParagraph + KPRes.TriggerEventTypeUnknown +
+					StrUtil.NewParagraph + KPRes.MoreInfo + ":" +
 					StrUtil.NewLine;
 				string strUrl = AppHelp.GetOnlineUrl(AppDefs.HelpTopics.TriggerUIStateUpd, null);
 

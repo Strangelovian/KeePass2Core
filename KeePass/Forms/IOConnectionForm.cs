@@ -236,7 +236,7 @@ namespace KeePass.Forms
 					string strError = exTest.Message;
 					if((exTest.InnerException != null) &&
 						!string.IsNullOrEmpty(exTest.InnerException.Message))
-						strError += MessageService.NewParagraph +
+						strError += StrUtil.NewParagraph +
 							exTest.InnerException.Message;
 
 					MessageService.ShowWarning(m_ioc.GetDisplayName(), strError);

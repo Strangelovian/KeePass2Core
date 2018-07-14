@@ -99,8 +99,8 @@ namespace KeePass.Plugins
 			try { LoadPriv(strFilePath, slStatus, true, true, true, null); }
 			catch(PlgxException exPlgx)
 			{
-				MessageService.ShowWarning(strFilePath + MessageService.NewParagraph +
-					KPRes.PluginLoadFailed + MessageService.NewParagraph +
+				MessageService.ShowWarning(strFilePath + StrUtil.NewParagraph +
+					KPRes.PluginLoadFailed + StrUtil.NewParagraph +
 					exPlgx.Message);
 			}
 			catch(Exception exLoad)

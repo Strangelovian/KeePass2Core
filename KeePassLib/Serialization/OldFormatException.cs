@@ -45,7 +45,7 @@ namespace KeePassLib.Serialization
 					(@" (" + m_strFormat + @")") : string.Empty) + ".";
 
 				if(m_type == OldFormatType.KeePass1x)
-					str += MessageService.NewParagraph + KLRes.KeePass1xHint;
+					str += StrUtil.NewParagraph + KLRes.KeePass1xHint;
 
 				return str;
 			}

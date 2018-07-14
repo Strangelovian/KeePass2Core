@@ -45,8 +45,8 @@ namespace KeePass.Util
 
 			if(!Program.Config.UI.ShowEmSheetDialog) return;
 
-			string str = KPRes.EmergencySheetInfo + MessageService.NewParagraph +
-				KPRes.EmergencySheetRec + MessageService.NewParagraph +
+			string str = KPRes.EmergencySheetInfo + StrUtil.NewParagraph +
+				KPRes.EmergencySheetRec + StrUtil.NewParagraph +
 				KPRes.EmergencySheetQ;
 
 			VistaTaskDialog dlg = new VistaTaskDialog();

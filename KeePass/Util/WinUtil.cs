@@ -236,7 +236,7 @@ namespace KeePass.Util
 				{
 					string strInf = KPRes.FileOrUrl + ": " + strApp;
 					if((strArgs != null) && (strArgs.Length > 0))
-						strInf += MessageService.NewParagraph +
+						strInf += StrUtil.NewParagraph +
 							KPRes.Arguments + ": " + strArgs;
 
 					MessageService.ShowWarning(strInf, exCmd);
@@ -338,7 +338,7 @@ namespace KeePass.Util
 			{
 				string strInf = KPRes.FileOrUrl + ": " + strApp;
 				if((strArgs != null) && (strArgs.Length > 0))
-					strInf += MessageService.NewParagraph +
+					strInf += StrUtil.NewParagraph +
 						KPRes.Arguments + ": " + strArgs;
 
 				MessageService.ShowWarning(strInf, ex);

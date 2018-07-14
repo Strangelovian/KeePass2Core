@@ -118,8 +118,8 @@ namespace KeePassLib.Serialization
 				PwUuid puKdf = m_pwDatabase.KdfParameters.KdfUuid;
 				KdfEngine kdf = KdfPool.Get(puKdf);
 				if(kdf == null)
-					throw new Exception(KLRes.UnknownKdf + MessageService.NewParagraph +
-						// KLRes.FileNewVerOrPlgReq + MessageService.NewParagraph +
+					throw new Exception(KLRes.UnknownKdf + StrUtil.NewParagraph +
+						// KLRes.FileNewVerOrPlgReq + StrUtil.NewParagraph +
 						"UUID: " + puKdf.ToHexString() + ".");
 				kdf.Randomize(m_pwDatabase.KdfParameters);
 

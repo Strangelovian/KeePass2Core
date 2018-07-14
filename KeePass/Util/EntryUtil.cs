@@ -75,7 +75,7 @@ namespace KeePass.Util
 					if(File.Exists(strFile))
 					{
 						string strMsg = KPRes.FileExistsAlready + StrUtil.NewLine;
-						strMsg += strFile + MessageService.NewParagraph;
+						strMsg += strFile + StrUtil.NewParagraph;
 						strMsg += KPRes.OverwriteExistingFileQuestion;
 
 						DialogResult dr = MessageService.Ask(strMsg, null,
@@ -521,7 +521,7 @@ namespace KeePass.Util
 			string str = CreateSummaryList(pgItems, l.ToArray());
 
 			if((str.Length == 0) || !bStartWithNewPar) return str;
-			return (MessageService.NewParagraph + str);
+			return (StrUtil.NewParagraph + str);
 		}
 
 		public static string CreateSummaryList(PwGroup pgSubGroups, PwEntry[] vEntries)

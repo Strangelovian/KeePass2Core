@@ -1086,7 +1086,7 @@ namespace KeePass.Forms
 			if(bConfirmOverwrite && File.Exists(strFileName))
 			{
 				string strMsg = KPRes.FileExistsAlready + StrUtil.NewLine +
-					strFileName + MessageService.NewParagraph +
+					strFileName + StrUtil.NewParagraph +
 					KPRes.OverwriteExistingFileQuestion;
 
 				if(MessageService.AskYesNo(strMsg) == false)
@@ -1435,7 +1435,7 @@ namespace KeePass.Forms
 			else if(strFieldTo == PwDefs.NotesField)
 			{
 				if((m_rtNotes.TextLength > 0) && (strValue.Length > 0))
-					strValue = MessageService.NewParagraph + strValue;
+					strValue = StrUtil.NewParagraph + strValue;
 				m_rtNotes.Text += strValue;
 			}
 			else { Debug.Assert(false); }
@@ -1881,8 +1881,8 @@ namespace KeePass.Forms
 				if(m_vBinaries.Get(strItem) != null)
 				{
 					string strMsg = KPRes.AttachedExistsAlready + StrUtil.NewLine +
-						strItem + MessageService.NewParagraph + KPRes.AttachNewRename +
-						MessageService.NewParagraph + KPRes.AttachNewRenameRemarks0 +
+						strItem + StrUtil.NewParagraph + KPRes.AttachNewRename +
+						StrUtil.NewParagraph + KPRes.AttachNewRenameRemarks0 +
 						StrUtil.NewLine + KPRes.AttachNewRenameRemarks1 +
 						StrUtil.NewLine + KPRes.AttachNewRenameRemarks2;
 					DialogResult dr = MessageService.Ask(strMsg, null,
@@ -1912,7 +1912,7 @@ namespace KeePass.Forms
 				try
 				{
 					if(!FileDialogsEx.CheckAttachmentSize(strFile, KPRes.AttachFailed +
-						MessageService.NewParagraph + strFile))
+						StrUtil.NewParagraph + strFile))
 						continue;
 
 					byte[] vBytes = File.ReadAllBytes(strFile);

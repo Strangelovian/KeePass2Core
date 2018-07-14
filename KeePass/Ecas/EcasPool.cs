@@ -195,7 +195,7 @@ namespace KeePass.Ecas
 			}
 
 			throw new Exception(KPRes.TriggerEventTypeUnknown + " " +
-				KPRes.TypeUnknownHint + MessageService.NewParagraph + e.TypeString);
+				KPRes.TypeUnknownHint + StrUtil.NewParagraph + e.TypeString);
 		}
 
 		public bool EvaluateCondition(EcasCondition c, EcasContext ctx)
@@ -212,7 +212,7 @@ namespace KeePass.Ecas
 			}
 
 			throw new Exception(KPRes.TriggerConditionTypeUnknown + " " +
-				KPRes.TypeUnknownHint + MessageService.NewParagraph + c.TypeString);
+				KPRes.TypeUnknownHint + StrUtil.NewParagraph + c.TypeString);
 		}
 
 		public void ExecuteAction(EcasAction a, EcasContext ctx)
@@ -229,7 +229,7 @@ namespace KeePass.Ecas
 			}
 
 			throw new Exception(KPRes.TriggerActionTypeUnknown + " " +
-				KPRes.TypeUnknownHint + MessageService.NewParagraph + a.TypeString);
+				KPRes.TypeUnknownHint + StrUtil.NewParagraph + a.TypeString);
 		}
 	}
 }

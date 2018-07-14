@@ -61,7 +61,7 @@ namespace KeePass.Forms
 					KPTranslation.FileExtension, SearchOption.TopDirectoryOnly);
 				if(l.Count != 0)
 				{
-					string str = KPRes.LngInAppDir + MessageService.NewParagraph;
+					string str = KPRes.LngInAppDir + StrUtil.NewParagraph;
 
 					const int cMaxFL = 6;
 					for(int i = 0; i < Math.Min(l.Count, cMaxFL); ++i)
@@ -72,7 +72,7 @@ namespace KeePass.Forms
 					}
 					str += StrUtil.NewLine;
 
-					str += KPRes.LngInAppDirNote + MessageService.NewParagraph;
+					str += KPRes.LngInAppDirNote + StrUtil.NewParagraph;
 					str += KPRes.LngInAppDirQ;
 
 					if(MessageService.AskYesNo(str, PwDefs.ShortProductName, true,

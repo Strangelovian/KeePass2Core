@@ -57,7 +57,7 @@ namespace KeePass.DataExchange.Formats
 		public override void Import(PwDatabase pwStorage, Stream sInput,
 			IStatusLogger slLogger)
 		{
-			if(MessageService.AskYesNo(KPRes.ImportMustRead + MessageService.NewParagraph +
+			if(MessageService.AskYesNo(KPRes.ImportMustRead + StrUtil.NewParagraph +
 				KPRes.ImportMustReadQuestion) == false)
 			{
 				AppHelp.ShowHelp(AppDefs.HelpTopics.ImportExport,

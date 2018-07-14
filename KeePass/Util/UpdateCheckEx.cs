@@ -590,7 +590,7 @@ namespace KeePass.Util
 				!Program.IsDevelopmentSnapshot())
 			{
 				string strHdr = KPRes.UpdateCheckInfo;
-				string strSub = KPRes.UpdateCheckInfoRes + MessageService.NewParagraph +
+				string strSub = KPRes.UpdateCheckInfoRes + StrUtil.NewParagraph +
 					KPRes.UpdateCheckInfoPriv;
 
 				VistaTaskDialog dlg = new VistaTaskDialog();
@@ -609,9 +609,9 @@ namespace KeePass.Util
 				if(dlg.ShowDialog(fParent)) iResult = dlg.Result;
 				else
 				{
-					string strMain = strHdr + MessageService.NewParagraph + strSub;
+					string strMain = strHdr + StrUtil.NewParagraph + strSub;
 					iResult = (MessageService.AskYesNo(strMain +
-						MessageService.NewParagraph + KPRes.UpdateCheckEnableQ) ?
+						StrUtil.NewParagraph + KPRes.UpdateCheckEnableQ) ?
 						(int)DialogResult.Yes : (int)DialogResult.No);
 				}
 

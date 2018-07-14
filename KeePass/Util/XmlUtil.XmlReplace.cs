@@ -219,8 +219,8 @@ namespace KeePass.Util
 			}
 			catch(Exception)
 			{
-				throw new Exception(KPRes.XmlModInvalid + MessageService.NewParagraph +
-					KPRes.OpAborted + MessageService.NewParagraph +
+				throw new Exception(KPRes.XmlModInvalid + StrUtil.NewParagraph +
+					KPRes.OpAborted + StrUtil.NewParagraph +
 					KPRes.DbNoModBy.Replace(@"{PARAM}", @"'" + KPRes.XmlReplace + @"'"));
 			}
 			finally { msMod.Close(); }

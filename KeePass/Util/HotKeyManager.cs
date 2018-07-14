@@ -254,7 +254,7 @@ namespace KeePass.Util
 				if(char.IsControl(strUni, 0)) { Debug.Assert(false); strUni = "?"; }
 
 				string str = KPRes.CtrlAltAConflict.Replace(@"{PARAM}", strUni) +
-					MessageService.NewParagraph + KPRes.CtrlAltAConflictHint;
+					StrUtil.NewParagraph + KPRes.CtrlAltAConflictHint;
 
 				VistaTaskDialog dlg = new VistaTaskDialog();
 				dlg.AddButton((int)DialogResult.Cancel, KPRes.Ok, null);

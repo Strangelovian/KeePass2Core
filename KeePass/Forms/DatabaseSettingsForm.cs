@@ -642,7 +642,7 @@ namespace KeePass.Forms
 
 			if(bShowAdjustments && (strAdj.Length > 0))
 			{
-				strAdj = KPRes.KdfAdjust + MessageService.NewParagraph + strAdj;
+				strAdj = KPRes.KdfAdjust + StrUtil.NewParagraph + strAdj;
 				MessageService.ShowInfo(strAdj);
 			}
 
@@ -871,7 +871,7 @@ namespace KeePass.Forms
 				lMS = Math.Max(lMS, 1L);
 				double dS = (double)lMS / 1000.0;
 
-				strMsg = KPRes.TestSuccess + MessageService.NewParagraph +
+				strMsg = KPRes.TestSuccess + StrUtil.NewParagraph +
 					KPRes.TransformTime.Replace(@"{PARAM}", dS.ToString());
 			}
 			catch(ThreadAbortException)

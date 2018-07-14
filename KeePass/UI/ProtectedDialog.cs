@@ -341,7 +341,7 @@ namespace KeePass.UI
 				mbf |= (NativeMethods.MessageBoxFlags.MB_RTLREADING |
 					NativeMethods.MessageBoxFlags.MB_RIGHT);
 			NativeMethods.MessageBox(IntPtr.Zero, KPRes.SecDeskOtherSwitched +
-				MessageService.NewParagraph + KPRes.SecDeskSwitchBack,
+				StrUtil.NewParagraph + KPRes.SecDeskSwitchBack,
 				PwDefs.ShortProductName, mbf);
 			MessageService.ExternalDecrementMessageCount();
 

@@ -99,7 +99,7 @@ namespace KeePass.DataExchange.Formats
 			byte[] pbData = ms.ToArray();
 			ms.Close();
 
-			string strFmt = KLRes.FileLoadFailed + MessageService.NewParagraph +
+			string strFmt = KLRes.FileLoadFailed + StrUtil.NewParagraph +
 				KPRes.NoEncNoCompress;
 			// The file must start with "<?xml"
 			if((pbData.Length < 6) || (pbData[0] != 0x3C) || (pbData[1] != 0x3F) ||

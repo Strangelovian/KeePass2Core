@@ -46,7 +46,7 @@ namespace KeePassLib.Serialization
 			if(!string.IsNullOrEmpty(strBaseFile))
 			{
 				sb.Append(strBaseFile);
-				sb.Append(MessageService.NewParagraph);
+				sb.Append(StrUtil.NewParagraph);
 			}
 
 			sb.Append(KLRes.FileLockedWrite);
@@ -55,7 +55,7 @@ namespace KeePassLib.Serialization
 			if(!string.IsNullOrEmpty(strUser)) sb.Append(strUser);
 			else sb.Append("?");
 
-			sb.Append(MessageService.NewParagraph);
+			sb.Append(StrUtil.NewParagraph);
 			sb.Append(KLRes.TryAgainSecs);
 
 			m_strMsg = sb.ToString();

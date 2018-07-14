@@ -166,7 +166,7 @@ namespace KeePass.DataExchange
 				{
 					string strMsgEx = excpFmt.Message;
 					if(bSynchronize && (excpFmt is InvalidCompositeKeyException))
-						strMsgEx = KLRes.InvalidCompositeKey + MessageService.NewParagraph +
+						strMsgEx = KLRes.InvalidCompositeKey + StrUtil.NewParagraph +
 							KPRes.SynchronizingHint;
 
 					MessageService.ShowWarning(strMsgEx);

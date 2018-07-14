@@ -287,7 +287,7 @@ namespace KeePassLib.Serialization
 			uint uVersion = MemUtil.BytesToUInt32(pb);
 			if((uVersion & FileVersionCriticalMask) > (FileVersion32 & FileVersionCriticalMask))
 				throw new FormatException(KLRes.FileVersionUnsupported +
-					MessageService.NewParagraph + KLRes.FileNewVerReq);
+					StrUtil.NewParagraph + KLRes.FileNewVerReq);
 			m_uFileVersion = uVersion;
 
 			while(true)

@@ -207,8 +207,8 @@ namespace KeePass.Plugins
 				{
 					if(Is1xPlugin(fi.FullName))
 						MessageService.ShowWarning(KPRes.PluginIncompatible +
-							StrUtil.NewLine + fi.FullName + MessageService.NewParagraph +
-							KPRes.Plugin1x + MessageService.NewParagraph + KPRes.Plugin1xHint);
+							StrUtil.NewLine + fi.FullName + StrUtil.NewParagraph +
+							KPRes.Plugin1x + StrUtil.NewParagraph + KPRes.Plugin1xHint);
 					else exShowStd = exBif;
 				}
 				catch(Exception exLoad)
@@ -235,7 +235,7 @@ namespace KeePass.Plugins
 				AppDefs.CommandLineOptions.Debug] != null);
 
 			string strMsg = KPRes.PluginIncompatible + StrUtil.NewLine +
-				strPath + MessageService.NewParagraph + KPRes.PluginUpdateHint;
+				strPath + StrUtil.NewParagraph + KPRes.PluginUpdateHint;
 			string strExcp = ((ex != null) ? StrUtil.FormatException(ex).Trim() : null);
 
 			VistaTaskDialog vtd = new VistaTaskDialog();
