@@ -165,7 +165,7 @@ namespace KeePass.DataExchange.Formats
 					str = ImportUtil.FixUrl(str);
 
 				ImportUtil.AppendToField(pe, strField, str, pd, ((strField ==
-					PwDefs.NotesField) ? MessageService.NewLine : ", "), false);
+					PwDefs.NotesField) ? StrUtil.NewLine : ", "), false);
 			}
 		}
 	}

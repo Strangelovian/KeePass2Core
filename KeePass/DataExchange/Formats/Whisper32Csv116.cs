@@ -154,7 +154,7 @@ namespace KeePass.DataExchange.Formats
 					else break;
 				}
 				else if(ch == '\n')
-					sbValue.Append(MessageService.NewLine);
+					sbValue.Append(StrUtil.NewLine);
 				else sbValue.Append(ch);
 			}
 

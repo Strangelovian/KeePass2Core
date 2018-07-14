@@ -664,7 +664,7 @@ namespace KeePass.Forms
 			else { Debug.Assert(false); return; }
 
 			if(strAdj.Length > 0)
-				strAdj += MessageService.NewLine;
+				strAdj += StrUtil.NewLine;
 			strAdj += "* " + strName + ": " + tValue.ToString() +
 				" -> " + tCmp.ToString() + ".";
 

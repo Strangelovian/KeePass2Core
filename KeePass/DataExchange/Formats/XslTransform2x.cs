@@ -113,7 +113,7 @@ namespace KeePass.DataExchange.Formats
 				xws.Encoding = StrUtil.Utf8;
 				// xws.Indent = false;
 				xws.IndentChars = "\t";
-				xws.NewLineChars = MessageService.NewLine;
+				xws.NewLineChars = StrUtil.NewLine;
 				xws.NewLineHandling = NewLineHandling.None;
 				xws.OmitXmlDeclaration = true;
 			}

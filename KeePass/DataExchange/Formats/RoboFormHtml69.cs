@@ -185,7 +185,7 @@ namespace KeePass.DataExchange.Formats
 								bNotesHeaderFound = true;
 							else
 								ImportUtil.AppendToField(pe, PwDefs.NotesField,
-									strText.Trim(), pd, MessageService.NewLine, false);
+									strText.Trim(), pd, StrUtil.NewLine, false);
 						}
 						else { Debug.Assert(false); }
 					}

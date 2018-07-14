@@ -120,7 +120,7 @@ namespace KeePass.DataExchange.Formats
 
 				if(strName == PwDefs.NotesField)
 				{
-					if(strNotes.Length > 0) strNotes += MessageService.NewLine;
+					if(strNotes.Length > 0) strNotes += StrUtil.NewLine;
 					strNotes += strValue;
 				}
 				else ImportUtil.AppendToField(pe, strName, strValue, pwStorage);

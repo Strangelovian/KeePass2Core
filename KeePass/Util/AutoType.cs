@@ -669,7 +669,7 @@ namespace KeePass.Util
 					string strValue = m.Value;
 					if(strValue.StartsWith(@"{s:", StrUtil.CaseIgnoreCmp))
 						return (KPRes.AutoTypeUnknownPlaceholder +
-							MessageService.NewLine + strValue);
+							StrUtil.NewLine + strValue);
 				}
 			}
 			catch(Exception ex) { Debug.Assert(false); return ex.Message; }

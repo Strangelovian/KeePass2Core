@@ -316,7 +316,7 @@ namespace KeePass.DataExchange.Formats
 
 				strValue = strValue.Replace("\\n", ", ");
 			}
-			else strValue = strValue.Replace("\\n", MessageService.NewLine);
+			else strValue = strValue.Replace("\\n", StrUtil.NewLine);
 
 			ImportUtil.AppendToField(pe, strFieldName, strValue, pdContext);
 		}

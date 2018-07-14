@@ -215,8 +215,8 @@ namespace KeePass.DataExchange.Formats
 		{
 			string str = strData;
 			
-			str = str.Replace(@"<br/>", MessageService.NewLine);
-			str = str.Replace(@"<br />", MessageService.NewLine);
+			str = str.Replace(@"<br/>", StrUtil.NewLine);
+			str = str.Replace(@"<br />", StrUtil.NewLine);
 
 			str = StrUtil.XmlToString(str);
 			return str;

@@ -266,7 +266,7 @@ namespace KeePass.Util.XmlSerialization
 		private static void AppendLine(StringBuilder sb, string strAppend,
 			ref int iIndent, int iIndentChangePre, int iIndentChangePost)
 		{
-			Append(sb, strAppend + MessageService.NewLine, ref iIndent,
+			Append(sb, strAppend + StrUtil.NewLine, ref iIndent,
 				iIndentChangePre, iIndentChangePost);
 		}
 

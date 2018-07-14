@@ -203,7 +203,7 @@ namespace KeePass.Ecas
 				string str = KPRes.Event + ": '" + KPRes.UpdatedUIState + "'." +
 					MessageService.NewParagraph + KPRes.TriggerEventTypeUnknown +
 					MessageService.NewParagraph + KPRes.MoreInfo + ":" +
-					MessageService.NewLine;
+					StrUtil.NewLine;
 				string strUrl = AppHelp.GetOnlineUrl(AppDefs.HelpTopics.TriggerUIStateUpd, null);
 
 				string strVtd = str + VistaTaskDialog.CreateLink(strUrl, strUrl);

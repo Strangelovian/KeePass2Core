@@ -1085,7 +1085,7 @@ namespace KeePass.Forms
 
 			if(bConfirmOverwrite && File.Exists(strFileName))
 			{
-				string strMsg = KPRes.FileExistsAlready + MessageService.NewLine +
+				string strMsg = KPRes.FileExistsAlready + StrUtil.NewLine +
 					strFileName + MessageService.NewParagraph +
 					KPRes.OverwriteExistingFileQuestion;
 
@@ -1880,11 +1880,11 @@ namespace KeePass.Forms
 				string strItem = UrlUtil.GetFileName(strFile);
 				if(m_vBinaries.Get(strItem) != null)
 				{
-					string strMsg = KPRes.AttachedExistsAlready + MessageService.NewLine +
+					string strMsg = KPRes.AttachedExistsAlready + StrUtil.NewLine +
 						strItem + MessageService.NewParagraph + KPRes.AttachNewRename +
 						MessageService.NewParagraph + KPRes.AttachNewRenameRemarks0 +
-						MessageService.NewLine + KPRes.AttachNewRenameRemarks1 +
-						MessageService.NewLine + KPRes.AttachNewRenameRemarks2;
+						StrUtil.NewLine + KPRes.AttachNewRenameRemarks1 +
+						StrUtil.NewLine + KPRes.AttachNewRenameRemarks2;
 					DialogResult dr = MessageService.Ask(strMsg, null,
 						MessageBoxButtons.YesNoCancel);
 

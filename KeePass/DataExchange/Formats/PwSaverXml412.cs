@@ -187,7 +187,7 @@ namespace KeePass.DataExchange.Formats
 				if(string.IsNullOrEmpty(strF)) strF = strName;
 
 				ImportUtil.AppendToField(pe, strF, strValue, pd, ((strF ==
-					PwDefs.NotesField) ? MessageService.NewLine : ", "), true);
+					PwDefs.NotesField) ? StrUtil.NewLine : ", "), true);
 			}
 		}
 

@@ -257,7 +257,7 @@ namespace KeePass.DataExchange
 						{
 							MessageService.ShowWarning(KPRes.SyncFailed,
 								pwDatabase.IOConnectionInfo.GetDisplayName() +
-								MessageService.NewLine + ioc.GetDisplayName(), exSync);
+								StrUtil.NewLine + ioc.GetDisplayName(), exSync);
 
 							bAllSuccess = false;
 							continue;
@@ -295,7 +295,7 @@ namespace KeePass.DataExchange
 			Stream s = IOConnection.OpenRead(iocImp);
 			if(s == null)
 				throw new FileNotFoundException(iocImp.GetDisplayName() +
-					MessageService.NewLine + KPRes.FileNotFoundError);
+					StrUtil.NewLine + KPRes.FileNotFoundError);
 
 			try { fmtImp.Import(pdImp, s, null); }
 			finally { s.Close(); }

@@ -68,9 +68,9 @@ namespace KeePass.Forms
 					{
 						if(i == (cMaxFL - 1)) str += "...";
 						else str += l[i];
-						str += MessageService.NewLine;
+						str += StrUtil.NewLine;
 					}
-					str += MessageService.NewLine;
+					str += StrUtil.NewLine;
 
 					str += KPRes.LngInAppDirNote + MessageService.NewParagraph;
 					str += KPRes.LngInAppDirQ;
@@ -148,7 +148,7 @@ namespace KeePass.Forms
 
 				// try
 				// {
-				//	string nl = MessageService.NewLine;
+				//	string nl = StrUtil.NewLine;
 				//	lvi.ToolTipText = strName + " " + strVer + nl + p.AuthorName +
 				//		nl + p.AuthorContact + nl + nl + kvp.Key;
 				// }

@@ -74,7 +74,7 @@ namespace KeePass.Util
 
 					if(File.Exists(strFile))
 					{
-						string strMsg = KPRes.FileExistsAlready + MessageService.NewLine;
+						string strMsg = KPRes.FileExistsAlready + StrUtil.NewLine;
 						strMsg += strFile + MessageService.NewParagraph;
 						strMsg += KPRes.OverwriteExistingFileQuestion;
 
@@ -554,7 +554,7 @@ namespace KeePass.Util
 
 			for(int iSumEnum = 0; iSumEnum < nSummaryShow; ++iSumEnum)
 			{
-				if(strSummary.Length > 0) strSummary += MessageService.NewLine;
+				if(strSummary.Length > 0) strSummary += StrUtil.NewLine;
 
 				PwEntry pe = vEntries[iSumEnum];
 				strSummary += ("- " + StrUtil.CompactString3Dots(
@@ -567,7 +567,7 @@ namespace KeePass.Util
 				}
 			}
 			if(nSummaryShow != vEntries.Length)
-				strSummary += (MessageService.NewLine + "- " +
+				strSummary += (StrUtil.NewLine + "- " +
 					KPRes.MoreEntries.Replace(@"{PARAM}", (vEntries.Length -
 					nSummaryShow).ToString()));
 

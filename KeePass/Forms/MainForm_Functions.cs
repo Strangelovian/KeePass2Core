@@ -433,7 +433,7 @@ namespace KeePass.Forms
 				strWindowText = strFileDesc + strWindowEnd;
 
 				string strNtfPre = PwDefs.ShortProductName + " - " +
-					KPRes.WorkspaceLocked + MessageService.NewLine;
+					KPRes.WorkspaceLocked + StrUtil.NewLine;
 				strFileDesc = iocLck.Path;
 				iMaxChars = 63 - strNtfPre.Length;
 				if(iMaxChars >= 0)
@@ -473,7 +473,7 @@ namespace KeePass.Forms
 					strWindowEnd.Length);
 				strWindowText = strFileDesc + strWindowEnd;
 
-				string strNtfPre = PwDefs.ShortProductName + MessageService.NewLine;
+				string strNtfPre = PwDefs.ShortProductName + StrUtil.NewLine;
 				strNtfText = strNtfPre + WinUtil.CompactPath(
 					m_docMgr.ActiveDatabase.IOConnectionInfo.Path, 63 - strNtfPre.Length);
 
@@ -1811,7 +1811,7 @@ namespace KeePass.Forms
 			StringBuilder sb = new StringBuilder();
 			foreach(PwEntry pe in vEntries)
 			{
-				if(sb.Length > 0) sb.Append(MessageService.NewLine);
+				if(sb.Length > 0) sb.Append(StrUtil.NewLine);
 
 				PwDatabase pd = m_docMgr.SafeFindContainerOf(pe);
 

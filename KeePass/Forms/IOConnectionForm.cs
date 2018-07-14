@@ -193,7 +193,7 @@ namespace KeePass.Forms
 				catch(Exception ex)
 				{
 					string strMsg = KPRes.Field + @" '" + pi.DisplayName +
-						@"':" + MessageService.NewLine + ex.Message;
+						@"':" + StrUtil.NewLine + ex.Message;
 					// if(!VistaTaskDialog.ShowMessageBox(strMsg, KPRes.ValidationFailed,
 					//	PwDefs.ShortProductName, VtdIcon.Warning, this))
 					MessageService.ShowWarning(strMsg);

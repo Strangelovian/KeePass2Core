@@ -91,7 +91,7 @@ namespace KeePass.DataExchange.Formats
 				else if(bInNotes)
 				{
 					if(dItems.ContainsKey(PwDefs.NotesField))
-						dItems[PwDefs.NotesField] += MessageService.NewLine + strLine;
+						dItems[PwDefs.NotesField] += StrUtil.NewLine + strLine;
 					else dItems[PwDefs.NotesField] = strLine;
 				}
 				else

@@ -207,7 +207,7 @@ namespace KeePass.Plugins
 				{
 					if(Is1xPlugin(fi.FullName))
 						MessageService.ShowWarning(KPRes.PluginIncompatible +
-							MessageService.NewLine + fi.FullName + MessageService.NewParagraph +
+							StrUtil.NewLine + fi.FullName + MessageService.NewParagraph +
 							KPRes.Plugin1x + MessageService.NewParagraph + KPRes.Plugin1xHint);
 					else exShowStd = exBif;
 				}
@@ -234,7 +234,7 @@ namespace KeePass.Plugins
 			bool bShowExcp = (Program.CommandLineArgs[
 				AppDefs.CommandLineOptions.Debug] != null);
 
-			string strMsg = KPRes.PluginIncompatible + MessageService.NewLine +
+			string strMsg = KPRes.PluginIncompatible + StrUtil.NewLine +
 				strPath + MessageService.NewParagraph + KPRes.PluginUpdateHint;
 			string strExcp = ((ex != null) ? StrUtil.FormatException(ex).Trim() : null);
 

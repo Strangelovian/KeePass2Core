@@ -293,7 +293,7 @@ namespace KeePass.App
 					break;
 			}
 
-			str += MessageService.NewLine;
+			str += StrUtil.NewLine;
 			if(bPrefix) str += "* ";
 			str += KPRes.Description + ": ";
 
@@ -362,7 +362,7 @@ namespace KeePass.App
 		public static string RequiredPolicyMessage(AppPolicyId flag)
 		{
 			string str = KPRes.PolicyDisallowed + MessageService.NewParagraph;
-			str += KPRes.PolicyRequiredFlag + ":" + MessageService.NewLine;
+			str += KPRes.PolicyRequiredFlag + ":" + StrUtil.NewLine;
 			str += PolicyToString(flag, true);
 
 			return str;

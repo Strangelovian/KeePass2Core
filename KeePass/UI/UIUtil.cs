@@ -1043,7 +1043,7 @@ namespace KeePass.UI
 			// pg.GetCounts(true, out uSubGroups, out uEntries);
 			// sb.Append(MessageService.NewParagraph);
 			// sb.Append(KPRes.Subgroups); sb.Append(": "); sb.Append(uSubGroups);
-			// sb.Append(MessageService.NewLine);
+			// sb.Append(StrUtil.NewLine);
 			// sb.Append(KPRes.Entries); sb.Append(": "); sb.Append(uEntries);
 
 			return sb.ToString();

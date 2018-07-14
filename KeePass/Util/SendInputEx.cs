@@ -395,7 +395,7 @@ namespace KeePass.Util
 			else
 			{
 				throw new FormatException(KPRes.AutoTypeUnknownPlaceholder +
-					MessageService.NewLine + @"{" + strName + @"}");
+					StrUtil.NewLine + @"{" + strName + @"}");
 			}
 
 			uint uRepeat = 1;

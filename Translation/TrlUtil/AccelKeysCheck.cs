@@ -97,9 +97,9 @@ namespace TrlUtil
 				if(bCollides || bCollidesParent)
 				{
 					string strMsg = "Key " + chKey.ToString() + ":";
-					strMsg += MessageService.NewLine;
+					strMsg += StrUtil.NewLine;
 					strMsg += (bCollides ? dictAccel[chKey] : dictParent[chKey]);
-					strMsg += MessageService.NewLine + strId;
+					strMsg += StrUtil.NewLine + strId;
 					return strMsg;
 				}
 

@@ -177,12 +177,12 @@ namespace KeePassLib.Serialization
 					sb.AppendLine(lfi.Machine);
 					sb.AppendLine(lfi.Domain);
 #else
-					sb.Append(LockFileHeader + MessageService.NewLine);
-					sb.Append(lfi.ID + MessageService.NewLine);
-					sb.Append(strTime + MessageService.NewLine);
-					sb.Append(lfi.UserName + MessageService.NewLine);
-					sb.Append(lfi.Machine + MessageService.NewLine);
-					sb.Append(lfi.Domain + MessageService.NewLine);
+					sb.Append(LockFileHeader + StrUtil.NewLine);
+					sb.Append(lfi.ID + StrUtil.NewLine);
+					sb.Append(strTime + StrUtil.NewLine);
+					sb.Append(lfi.UserName + StrUtil.NewLine);
+					sb.Append(lfi.Machine + StrUtil.NewLine);
+					sb.Append(lfi.Domain + StrUtil.NewLine);
 #endif
 
 					byte[] pbFile = StrUtil.Utf8.GetBytes(sb.ToString());

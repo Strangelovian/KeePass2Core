@@ -10,7 +10,7 @@
     <RootNamespace>KeePassLib</RootNamespace>
     <AssemblyName>KeePassLib</AssemblyName>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>KeePassLib.pfx</AssemblyOriginatorKeyFile>
+    <!--<AssemblyOriginatorKeyFile>KeePassLib.pfx</AssemblyOriginatorKeyFile>-->
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>2.0</OldToolsVersion>

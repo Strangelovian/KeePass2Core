@@ -161,7 +161,7 @@ namespace KeePass.DataExchange.Formats
 			if(strValue == @"<br>") strValue = string.Empty;
 			strValue = strValue.Replace("\r", string.Empty);
 			strValue = strValue.Replace("\n", string.Empty);
-			strValue = strValue.Replace(@"<br>", MessageService.NewLine);
+			strValue = strValue.Replace(@"<br>", StrUtil.NewLine);
 
 			if((strFieldName != null) && (strFieldName == m_strModifiedField))
 			{
