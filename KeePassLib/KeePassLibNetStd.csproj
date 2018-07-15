@@ -4,7 +4,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Utility\MessageService.cs" />
-    <Compile Remove="Utility\GfxUtil.cs" />
     <Compile Remove="Utility\MonoWorkarounds.cs" />
     <Compile Remove="Translation\**" />
   </ItemGroup>
@@ -15,6 +14,7 @@
     <None Remove="Translation\**" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.5.0" />
     <PackageReference Include="System.IO.FileSystem.AccessControl" Version="4.5.0" />
     <PackageReference Include="System.Security.AccessControl" Version="4.5.0" />
   </ItemGroup>
