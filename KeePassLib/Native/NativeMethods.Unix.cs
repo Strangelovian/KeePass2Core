@@ -24,6 +24,10 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 
+#if NETSTANDARD2_0
+#define KeePassUAP
+#endif
+
 #if !KeePassUAP
 using System.Windows.Forms;
 #endif

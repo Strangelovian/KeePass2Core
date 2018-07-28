@@ -25,6 +25,10 @@ using System.Net;
 using System.Reflection;
 using System.Text;
 
+#if NETSTANDARD2_0
+#define KeePassUAP
+#endif
+
 #if (!KeePassLibSD && !KeePassUAP)
 using System.Net.Cache;
 using System.Net.Security;

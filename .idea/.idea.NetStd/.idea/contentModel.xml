@@ -82,7 +82,6 @@
           <e p="UserKeyType.cs" t="Include" />
         </e>
         <e p="Native" t="Include">
-          <e p="ClipboardU.cs" t="Include" />
           <e p="NativeLib.cs" t="Include" />
           <e p="NativeMethods.cs" t="Include" />
           <e p="NativeMethods.Unix.cs" t="Include" />
@@ -135,6 +134,7 @@
           <e p="AppLogEx.cs" t="Include" />
           <e p="GfxUtil.cs" t="Include" />
           <e p="MemUtil.cs" t="Include" />
+          <e p="MonoWorkarounds.cs" t="Include" />
           <e p="StrUtil.cs" t="Include" />
           <e p="TimeUtil.cs" t="Include" />
           <e p="TypeOverridePool.cs" t="Include" />

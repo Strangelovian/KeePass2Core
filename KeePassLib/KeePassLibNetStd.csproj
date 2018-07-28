@@ -4,8 +4,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Utility\MessageService.cs" />
-    <Compile Remove="Utility\MonoWorkarounds.cs" />
     <Compile Remove="Translation\**" />
+    <Compile Remove="Native\ClipboardU.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="Translation\**" />

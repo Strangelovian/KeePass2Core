@@ -25,6 +25,10 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
 
+#if NETSTANDARD2_0
+#define KeePassUAP
+#endif
+
 #if !KeePassUAP
 using System.IO;
 using System.Threading;
@@ -134,7 +138,7 @@ namespace KeePassLib.Native
 			if(m_platID.HasValue) return m_platID.Value;
 
 #if KeePassUAP
-			m_platID = EnvironmentExt.OSVersion.Platform;
+			m_platID = Environment.OSVersion.Platform;
 #else
 			m_platID = Environment.OSVersion.Platform;
 #endif

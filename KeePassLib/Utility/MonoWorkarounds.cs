@@ -31,6 +31,10 @@ using System.Text;
 using System.Threading;
 using System.Xml;
 
+#if NETSTANDARD2_0
+#define KeePassUAP
+#endif
+
 #if !KeePassUAP
 using System.Windows.Forms;
 #endif

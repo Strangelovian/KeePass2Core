@@ -24,6 +24,12 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 
+#if NETSTANDARD2_0
+#define KeePassUAP
+#define KeePassLibSD
+using System.Security.Cryptography;
+#endif
+
 #if !KeePassUAP
 using System.Drawing;
 using System.Security.Cryptography;
@@ -182,7 +188,7 @@ namespace KeePassLib.Cryptography
 			try
 			{
 #if KeePassUAP
-				string strOS = EnvironmentExt.OSVersion.VersionString;
+				string strOS = Environment.OSVersion.VersionString;
 #else
 				string strOS = Environment.OSVersion.VersionString;
 #endif
@@ -210,10 +216,7 @@ namespace KeePassLib.Cryptography
 			}
 			catch(Exception) { Debug.Assert(false); }
 
-#if KeePassUAP
-			pb = DiagnosticsExt.GetProcessEntropy();
-			MemUtil.Write(ms, pb);
-#elif !KeePassLibSD
+#if !KeePassLibSD
 			try
 			{
 				using(Process p = Process.GetCurrentProcess())
