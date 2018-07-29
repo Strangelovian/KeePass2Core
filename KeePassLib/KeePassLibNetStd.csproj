@@ -6,6 +6,7 @@
     <Compile Remove="Utility\MessageService.cs" />
     <Compile Remove="Translation\**" />
     <Compile Remove="Native\ClipboardU.cs" />
+    <Compile Remove="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="Translation\**" />
@@ -19,5 +20,8 @@
     <PackageReference Include="System.Drawing.Common" Version="4.5.0" />
     <PackageReference Include="System.IO.FileSystem.AccessControl" Version="4.5.0" />
     <PackageReference Include="System.Security.AccessControl" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties" />
   </ItemGroup>
 </Project>

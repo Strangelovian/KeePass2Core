@@ -17,6 +17,10 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
+#if NETSTANDARD2_0
+#define KeePassUAP
+#endif
+
 #if DEBUG
 // #define DEBUG_BREAKONFAIL
 #endif
@@ -30,10 +34,6 @@ using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Xml;
-
-#if NETSTANDARD2_0
-#define KeePassUAP
-#endif
 
 #if !KeePassUAP
 using System.Windows.Forms;

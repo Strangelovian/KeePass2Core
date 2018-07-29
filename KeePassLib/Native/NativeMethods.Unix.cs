@@ -16,6 +16,9 @@
   along with this program; if not, write to the Free Software
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
+#if NETSTANDARD2_0
+#define KeePassUAP
+#endif
 
 using System;
 using System.Collections.Generic;
@@ -23,10 +26,6 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
-
-#if NETSTANDARD2_0
-#define KeePassUAP
-#endif
 
 #if !KeePassUAP
 using System.Windows.Forms;
