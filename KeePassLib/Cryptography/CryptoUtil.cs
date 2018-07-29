@@ -30,10 +30,42 @@ using System.Security.Cryptography;
 using KeePassLib.Native;
 using KeePassLib.Utility;
 
+#if NETSTANDARD2_0
+using Microsoft.AspNetCore.DataProtection;
+using System.IO;
+#endif
+
 namespace KeePassLib.Cryptography
 {
+	#if NETSTANDARD2_0
+	public enum DataProtectionScope
+	{
+		CurrentUser
+	};
+	#endif
+	
 	public static class CryptoUtil
 	{
+		#if NETSTANDARD2_0
+		private static readonly IDataProtector g_obProtector;
+		static CryptoUtil()
+		{
+			var appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+			var destFolder = Path.Combine(appDataFolder, "KeePass2");
+	
+			var dataProtectionProvider = DataProtectionProvider.Create(
+				new DirectoryInfo(destFolder),
+				configuration =>
+				{
+					configuration.UseEphemeralDataProtectionProvider();
+				});
+
+			g_obProtector = dataProtectionProvider.CreateProtector("KeePassLib.Cryptography");
+		}
+
+		public static bool IsProtectedDataSupported => true;
+
+		#else
 		private static bool? g_obProtData = null;
 		public static bool IsProtectedDataSupported
 		{
@@ -69,6 +101,7 @@ namespace KeePassLib.Cryptography
 				return b;
 			}
 		}
+		#endif
 
 		public static byte[] HashSha256(byte[] pbData)
 		{
@@ -199,6 +232,19 @@ namespace KeePassLib.Cryptography
 			return null;
 		}
 
+#if NETSTANDARD2_0
+		public static byte[] ProtectData(byte[] pb, byte[] pbOptEntropy,
+			DataProtectionScope s)
+		{
+			return g_obProtector.Protect(pb);
+		}
+
+		public static byte[] UnprotectData(byte[] pb, byte[] pbOptEntropy,
+			DataProtectionScope s)
+		{
+			return g_obProtector.Unprotect(pb);
+		}
+#else
 		public static byte[] ProtectData(byte[] pb, byte[] pbOptEntropy,
 			DataProtectionScope s)
 		{
@@ -231,5 +277,6 @@ namespace KeePassLib.Cryptography
 			Array.Copy(pb, pbCopy, pb.Length);
 			return pbCopy;
 		}
+#endif
 	}
 }
