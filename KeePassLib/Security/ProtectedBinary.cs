@@ -274,11 +274,13 @@ namespace KeePassLib.Security
 
 			if(ProtectedBinary.ProtectedMemorySupported)
 			{
-				#if NETSTANDARD2_0
-				CryptoUtil.ProtectData(m_pbData, null, DataProtectionScope.CurrentUser);
-				#else
+#if NETSTANDARD2_0
+				var protectedData = CryptoUtil.ProtectData(m_pbData, null, DataProtectionScope.CurrentUser);
+				Array.Clear(m_pbData, 0, m_pbData.Length);
+				m_pbData = protectedData;
+#else
 				ProtectedMemory.Protect(m_pbData, MemoryProtectionScope.SameProcess);
-				#endif
+#endif
 
 				m_mp = PbMemProt.ProtectedMemory;
 				return;
@@ -306,12 +308,16 @@ namespace KeePassLib.Security
 		{
 			if(m_pbData.Length == 0) return;
 
-			if(m_mp == PbMemProt.ProtectedMemory)
-				#if NETSTANDARD2_0
-				CryptoUtil.UnprotectData(m_pbData, null, DataProtectionScope.CurrentUser);
-				#else
+			if (m_mp == PbMemProt.ProtectedMemory)
+			{
+#if NETSTANDARD2_0
+				var unprotectedData = CryptoUtil.UnprotectData(m_pbData, null, DataProtectionScope.CurrentUser);
+				Array.Clear(m_pbData, 0, m_pbData.Length);
+				m_pbData = unprotectedData;
+#else
 				ProtectedMemory.Unprotect(m_pbData, MemoryProtectionScope.SameProcess);
-				#endif
+#endif
+			}
 			else if(m_mp == PbMemProt.ChaCha20)
 			{
 				byte[] pbIV = new byte[12];
