@@ -9,4 +9,21 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.CommandLineUtils" Version="1.1.1" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="DummyDatabases\kdf-aes_cipher-aes.kdbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DummyDatabases\kdf-aes_cipher-chacha20.kdbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DummyDatabases\kdf-argon2_cipher-aes.kdbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DummyDatabases\kdf-argon2_cipher-chacha20.kdbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="DummyDatabases\dummy databases pass phrase.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

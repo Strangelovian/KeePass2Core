@@ -5,11 +5,19 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="Kbdx2XmlConsole" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Kbdx2XmlConsole.csproj" t="IncludeRecursive" />
+        <e p="DummyDatabases" t="Include">
+          <e p="dummy databases pass phrase.txt" t="Include" />
+          <e p="kdf-aes_cipher-aes.kdbx" t="Include" />
+          <e p="kdf-aes_cipher-chacha20.kdbx" t="Include" />
+          <e p="kdf-argon2_cipher-aes.kdbx" t="Include" />
+          <e p="kdf-argon2_cipher-chacha20.kdbx" t="Include" />
+          <e p="THE DATABASES IN THIS FOLDER CONTAIN DUMMY DATA" t="Include" />
+        </e>
+        <e p="Kdbx2XmlConsole.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp2.0" t="Include">
-              <e p="Kbdx2XmlConsole.AssemblyInfo.cs" t="Include" />
+              <e p="Kdbx2XmlConsole.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -99,7 +107,7 @@
           <e p="NativeMethods.Unix.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netstandard2.0" t="Include">
               <e p="KeePassLibNetStd.AssemblyInfo.cs" t="Include" />
             </e>
