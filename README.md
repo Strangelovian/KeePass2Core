@@ -61,7 +61,7 @@ Dummy kdbx files and the unlocking dummy pass phrase are provided in the DummyDa
 ```
 
 ## Performance considerations
-### Argon2 KDF, same performane
+### Argon2 KDF, same performance
 For KDBX files saved with the Argon2 key derivation function (the newer one), the loading/saving time is identical the the regular KeePass2 program. This is because Argon2 uses only managed code, even in KeePass2.
 
 ### AES KDF, possibly slower
