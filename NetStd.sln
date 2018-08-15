@@ -1,8 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeePassLibNetStd", "KeePassLib\KeePassLibNetStd.csproj", "{5CABA2CE-1ED9-4944-BBF4-FE001150D858}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeePassLibNetStd", "KeePassLib\KeePassLibNetStd.csproj", "{5CABA2CE-1ED9-4944-BBF4-FE001150D858}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kbdx2XmlConsole", "Kbdx2XmlConsole\Kbdx2XmlConsole.csproj", "{F4F88CF6-C0A5-4CA5-BE97-70C6C8500BC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kdbx2XmlConsole", "Kbdx2XmlConsole\Kdbx2XmlConsole.csproj", "{F4F88CF6-C0A5-4CA5-BE97-70C6C8500BC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +21,11 @@ Global
 		{F4F88CF6-C0A5-4CA5-BE97-70C6C8500BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4F88CF6-C0A5-4CA5-BE97-70C6C8500BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4F88CF6-C0A5-4CA5-BE97-70C6C8500BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F39118BD-FBCA-41EA-A90C-6086FD9E4AAB}
 	EndGlobalSection
 EndGlobal

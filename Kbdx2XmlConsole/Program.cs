@@ -1,4 +1,6 @@
-﻿namespace Kbdx2XmlConsole
+﻿using System.Diagnostics;
+
+namespace Kbdx2XmlConsole
 {
     using System;
     using System.IO;
@@ -38,7 +40,9 @@
         }
 
         private static void ExportKbdx2Xml(string kdbx2ExportPath, string kdbx2ExportPassword)
-        {            
+        {
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
             var pwbDatabase = new PwDatabase();
 
             var cmpKey = new CompositeKey();
@@ -54,8 +58,9 @@
             var fileStream = new FileStream(xmlPath, FileMode.Create);
             
             xmlExportFile.Save(fileStream, null, KdbxFormat.PlainXml, null);
+            var elapsed = stopwatch.Elapsed;
                  
-            Console.WriteLine($"looks like {kdbx2ExportPath} was successfully exported to {xmlPath}");
+            Console.WriteLine($"{elapsed.TotalSeconds}s to export [{kdbx2ExportPath}] to [{xmlPath}]");
         }
     }
 }
