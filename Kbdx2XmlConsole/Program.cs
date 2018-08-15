@@ -1,14 +1,13 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
+using System.IO;
+using KeePassLib;
+using KeePassLib.Keys;
+using KeePassLib.Serialization;
+using Microsoft.Extensions.CommandLineUtils;
 
-namespace Kbdx2XmlConsole
+namespace Kdbx2XmlConsole
 {
-    using System;
-    using System.IO;
-    using KeePassLib;
-    using KeePassLib.Keys;
-    using KeePassLib.Serialization;
-    using Microsoft.Extensions.CommandLineUtils;
-
     internal static class Program
     {
         private static void Main(string[] args)
@@ -16,6 +15,7 @@ namespace Kbdx2XmlConsole
             var cmd = new CommandLineApplication();
             var kdbxArg = cmd.Option("-k | --kdbx <value>", "Kdbx file path", CommandOptionType.SingleValue);
             var pwdArg = cmd.Option("-p | --password <value>", "Kdbx password", CommandOptionType.SingleValue);
+            var modeArg = cmd.Option("-m | --mode <value>", "Either xml or dup, defaults to xml. xml exports database to plain text xml file. dup loads and saves the database with a file name suffixed by .dup.kdbx", CommandOptionType.SingleValue);
 
             cmd.OnExecute(() =>
             {
@@ -31,7 +31,15 @@ namespace Kbdx2XmlConsole
                     return -1;
                 }
 
-                ExportKbdx2Xml(kdbxArg.Value(), pwdArg.Value());
+                if (!modeArg.HasValue() || modeArg.Value() == "xml")
+                {
+                    ExportKdbx2Xml(kdbxArg.Value(), pwdArg.Value());
+                }
+                else
+                {
+                    ResaveKdbx(kdbxArg.Value(), pwdArg.Value());
+                }
+
                 return 0;
             });
 
@@ -39,7 +47,7 @@ namespace Kbdx2XmlConsole
             cmd.Execute(args);  
         }
 
-        private static void ExportKbdx2Xml(string kdbx2ExportPath, string kdbx2ExportPassword)
+        private static void ExportKdbx2Xml(string kdbx2ExportPath, string kdbx2ExportPassword)
         {
             var stopwatch = new Stopwatch();
             stopwatch.Start();
@@ -59,8 +67,39 @@ namespace Kbdx2XmlConsole
             
             xmlExportFile.Save(fileStream, null, KdbxFormat.PlainXml, null);
             var elapsed = stopwatch.Elapsed;
-                 
+
             Console.WriteLine($"{elapsed.TotalSeconds}s to export [{kdbx2ExportPath}] to [{xmlPath}]");
+        }
+
+        private static void ResaveKdbx(string kdbx2ExportPath, string kdbx2ExportPassword)
+        {
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
+            var pwbDatabase = new PwDatabase();
+
+            var cmpKey = new CompositeKey();
+            cmpKey.AddUserKey(new KcpPassword(kdbx2ExportPassword));
+            
+            var ioc = IOConnectionInfo.FromPath(kdbx2ExportPath);
+            
+            pwbDatabase.Open(ioc, cmpKey, null);
+
+            var elapsed = stopwatch.Elapsed;
+            Console.WriteLine($"{elapsed.TotalSeconds}s to load [{kdbx2ExportPath}]");
+
+            stopwatch.Reset();
+
+            var duplicate = new KdbxFile(pwbDatabase);
+            var dupPath = Path.GetDirectoryName(kdbx2ExportPath)
+                          + Path.DirectorySeparatorChar
+                          + Path.GetFileNameWithoutExtension(kdbx2ExportPath)
+                          + ".dup"
+                          + Path.GetExtension(kdbx2ExportPath);
+            var fileStream = new FileStream(dupPath, FileMode.Create);
+            
+            duplicate.Save(fileStream, null, KdbxFormat.Default, null);
+            
+            Console.WriteLine($"{elapsed.TotalSeconds}s to save [{kdbx2ExportPath}] to [{dupPath}]");
         }
     }
 }
